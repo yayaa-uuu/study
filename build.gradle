@@ -1,0 +1,58 @@
+plugins {
+    id 'org.springframework.boot' version '2.4.4'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java-library'
+}
+
+apply plugin: 'java-library'
+
+repositories {
+    maven { url 'https://maven.aliyun.com/repository/public/' }
+    maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local/' }
+    mavenCentral()
+}
+
+configure(subprojects.findAll {it.name != 'platform'}) {
+    apply plugin: 'java-library'
+    apply plugin: 'idea'
+    apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'org.springframework.boot'
+
+    group 'cn.tnar.msf.cm4'
+    version '1.0.0'
+
+    java {
+        toolchain {
+            sourceCompatibility = JavaVersion.VERSION_1_8
+            targetCompatibility = JavaVersion.VERSION_1_8
+        }
+    }
+
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        mavenCentral()
+    }
+
+    configurations {
+        compileOnly {
+            extendsFrom annotationProcessor
+        }
+    }
+
+    dependencies {
+        implementation platform(project(':platform'))
+    }
+
+    dependencyManagement {
+        imports {
+            mavenBom "com.alibaba.cloud:spring-cloud-alibaba-dependencies:2021.1"
+            mavenBom "org.springframework.cloud:spring-cloud-dependencies:2020.0.2"
+        }
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+
+}
+

@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        maven { url "http://maven.aliyun.com/repository/gradle-plugin" }
+        gradlePluginPortal()
+    }
+}
+rootProject.name = 'study'
+include 'design-patterns'
+include 'platform'
+include 'springboot-data'
+include 'springboot-webflux'
+include 'json'
+include 'springboot-Idempotent'
+include 'springboot-Interceptor'
+include 'http'
+include 'juc'
+include 'java8'
+include 'algorithm'
+include 'springboot-cache'
+include 'springboot-amqp'
+include 'netty-springboot-websocket'
+include 'jvm'

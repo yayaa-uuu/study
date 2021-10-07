@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="PLATFORM" />
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../gradle-6.7.1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/algorithm" />
+            <option value="$PROJECT_DIR$/design-patterns" />
+            <option value="$PROJECT_DIR$/http" />
+            <option value="$PROJECT_DIR$/java8" />
+            <option value="$PROJECT_DIR$/json" />
+            <option value="$PROJECT_DIR$/juc" />
+            <option value="$PROJECT_DIR$/jvm" />
+            <option value="$PROJECT_DIR$/netty-springboot-websocket" />
+            <option value="$PROJECT_DIR$/platform" />
+            <option value="$PROJECT_DIR$/springboot-Idempotent" />
+            <option value="$PROJECT_DIR$/springboot-Interceptor" />
+            <option value="$PROJECT_DIR$/springboot-amqp" />
+            <option value="$PROJECT_DIR$/springboot-cache" />
+            <option value="$PROJECT_DIR$/springboot-data" />
+            <option value="$PROJECT_DIR$/springboot-webflux" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,12 @@
+configurations {
+    compile.exclude module: 'spring-boot-starter-logging'
+}
+dependencies {
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    implementation group: 'junit', name: 'junit'
+
+}
+test {
+    useJUnitPlatform()
+}

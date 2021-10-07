@@ -1,0 +1,11 @@
+configurations {
+    compile.exclude module: 'spring-boot-starter-logging'
+}
+dependencies {
+    implementation 'org.openjdk.jol:jol-core:0.16'
+
+
+}
+test {
+    useJUnitPlatform()
+}

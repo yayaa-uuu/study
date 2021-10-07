@@ -1,0 +1,64 @@
+syntax = "proto3";
+
+package cmpark.message;
+
+option java_multiple_files = true;
+option java_package = 'cn.tnar.msf.cm4.msg.dto';
+
+/**
+ * 传输控制消息, 所有基本业务消息的包装
+ **/
+message Transmission{
+  enum MessageType{
+    TYPE_NOT_USED                       = 0; //不使用默认0
+
+    /**
+     * 通用消息
+     **/
+    TYPE_RESPOND                        = 1; //通用响应消息
+    TYPE_AUTHENTICATE                   = 2;//场端认证消息
+    TYPE_USER_AUTHENTICATE                   = 3;//场端认证消息
+  }
+
+  fixed32     ID      = 1;//消息ID, 请求/响应根据此字段对应
+  MessageType type    = 2; //消息类型
+  bytes       message = 3; //具体消息序列化后的字节
+}
+
+/**
+ * 通用响应消息
+ **/
+message Respond{
+  enum RespondCode{
+    CODE_NOT_USED      = 0; //不使用默认0
+    CODE_SUCCESS       = 1;//成功
+    CODE_FAILURE       = 2;//失败
+    CODE_DUPLICATE     = 3;//重复
+    CODE_MISMATCH      = 4;//外部引用不存在
+    CODE_NOT_SUPPORTED = 5;//暂不支持的功能
+    CODE_OFFLINE       = 6;//云端内部使用
+  }
+
+  RespondCode code    = 1;//响应码
+  bytes       message = 2;//响应消息
+}
+
+/**
+ * 场端认证消息。
+ **/
+message Authenticate{
+  string serial = 1; //接入序列号(32个字符)
+  string secret = 2; //接入安全码(32个字符)
+}
+
+/**
+ * 用户认证消息
+ */
+message UserAuthenticate{
+  string serial = 1; //接入序列号(32个字符)
+  string secret = 2; //接入安全码(32个字符)
+}
+
+
+
+

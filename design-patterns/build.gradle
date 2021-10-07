@@ -1,0 +1,33 @@
+configurations {
+    compile.exclude module: 'spring-boot-starter-logging'
+}
+dependencies {
+    implementation 'org.projectlombok:lombok:1.18.18'
+    compile fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'org.apache.commons:commons-pool2'
+    runtimeOnly 'mysql:mysql-connector-java'
+    api 'com.baomidou:mybatis-plus-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis-reactive'
+    implementation 'com.lmax:disruptor'
+    implementation 'com.google.protobuf:protobuf-java-util'
+    implementation 'com.google.protobuf:protobuf-java'
+    implementation 'org.apache.skywalking:apm-toolkit-log4j-2.x'
+    implementation 'org.springframework.boot:spring-boot-starter-log4j2'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-config'
+    implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
+    implementation 'io.netty:netty-all'
+    testImplementation group: 'junit', name: 'junit'
+    implementation 'com.squareup.okhttp3:okhttp'
+    implementation 'org.apache.commons:commons-lang3'
+    implementation 'com.aliyun.oss:aliyun-sdk-oss'
+    implementation 'org.apache.httpcomponents:httpmime'
+}
+
+test {
+    useJUnitPlatform()
+}

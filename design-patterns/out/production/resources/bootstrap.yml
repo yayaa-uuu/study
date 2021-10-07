@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: cloud-to-cloud-provider
+  cloud:
+    nacos:
+      config:
+        file-extension: yml
+        server-addr: 192.168.120.97:8848
+      discovery:
+        server-addr: 192.168.120.97:8848
+
+  profiles:
+    active: dev
