@@ -1,7 +1,6 @@
-package com.wx.timer;
+package com.wx.executor.timer;
 
 import io.netty.util.HashedWheelTimer;
-import io.netty.util.Timeout;
 import io.netty.util.Timer;
 
 import java.util.concurrent.TimeUnit;

@@ -1,7 +1,0 @@
-2021-07-27 11:47:16.205 [pool-2-thread-1] INFO  EventLoggingTask - Message
-2021-07-27 14:25:41.163 [main] INFO  ForkJoinTaskTest - calculating task
-2021-07-27 14:26:44.379 [main] INFO  ForkJoinTaskTest - calculating task
-2021-07-27 14:29:44.028 [main] INFO  ForkJoinTaskTest - calculating task
-2021-07-27 14:29:44.031 [main] INFO  ForkJoinTaskTest - result : 385
-2021-07-27 14:30:10.614 [main] INFO  ForkJoinTaskTest - calculating task
-2021-07-27 14:30:10.617 [main] INFO  ForkJoinTaskTest - result : 385

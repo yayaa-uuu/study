@@ -3,6 +3,7 @@ configurations {
 }
 dependencies {
     implementation 'org.projectlombok:lombok:1.18.18'
+    implementation 'junit:junit:4.13.1'
     compile fileTree(dir: "libs", include: ["*.jar"])
     implementation 'org.apache.commons:commons-pool2'
     runtimeOnly 'mysql:mysql-connector-java'

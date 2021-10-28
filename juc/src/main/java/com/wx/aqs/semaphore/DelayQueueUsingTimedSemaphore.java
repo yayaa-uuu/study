@@ -1,4 +1,4 @@
-package com.wx.semaphore;
+package com.wx.aqs.semaphore;
 
 import org.apache.commons.lang3.concurrent.TimedSemaphore;
 

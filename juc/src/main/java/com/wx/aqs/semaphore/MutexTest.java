@@ -1,4 +1,4 @@
-package com.wx.semaphore;
+package com.wx.aqs.semaphore;
 
 import org.junit.Test;
 

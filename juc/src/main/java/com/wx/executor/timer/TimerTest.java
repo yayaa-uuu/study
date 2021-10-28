@@ -1,4 +1,4 @@
-package com.wx.timer;
+package com.wx.executor.timer;
 
 import org.junit.Test;
 

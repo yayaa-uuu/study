@@ -1,4 +1,4 @@
-package com.wx.countdownlatch;
+package com.wx.aqs.countdownlatch;
 
 /**
  * 减法计数器
