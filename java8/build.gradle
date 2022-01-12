@@ -5,6 +5,7 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     implementation group: 'junit', name: 'junit'
+    implementation 'cglib:cglib:3.3.0'
 
 }
 test {
