@@ -4,9 +4,8 @@
 <configuration status="WARN" monitorInterval="60">
     <Properties>
         <!--常用变量配置 供下文中使用-->
-        <property name="APP_NAME">springboot-data</property>
+        <property name="APP_NAME">springboot-amqp</property>
         <property name="LOGGER_LEVEL">INFO</property>
-        <property name="LOGGER_LEVEL2">ERROR</property>
         <!--日志路径 对应服务器路径-->
         <property name="LOGGER_PATH">logs</property>
         <Property name="LOG_HOME">${LOGGER_PATH}/${APP_NAME}</Property>
@@ -41,7 +40,6 @@
             <Policies>
                 <!--滚动规则 时间或者文件大小 滚动后将按照filePattern命名-->
                 <!--interval属性用来指定多久滚动一次，默认是1 hour-->
-                <TimeBasedTriggeringPolicy interval="24"/>
                 <SizeBasedTriggeringPolicy size="${FILE_SIZE}"/>
             </Policies>
             <DefaultRolloverStrategy max="${rollover_strategy_max}"/>
@@ -54,7 +52,7 @@
                                  immediateFlush="false" append="true">
             <Filters>
                 <!-- 只输出level及以上级别的信息（onMatch），其他的直接拒绝（onMismatch）可以使用多个ThresholdFilter 达到精准过滤某个级别的日志-->
-                <ThresholdFilter level="${LOGGER_LEVEL}" onMatch="ACCEPT" onMismatch="DENY"/>
+                <ThresholdFilter level="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
             </Filters>
             <PatternLayout>
                 <Pattern>${log_pattern}</Pattern>
@@ -109,13 +107,7 @@
             <appender-ref ref="projectErrorRolling"/>
         </AsyncLogger>
 
-<!--        <AsyncLogger name="com.wx.demo.dao" level="info" additivity="false">-->
-<!--            <appender-ref ref="Console"/>-->
-<!--            <appender-ref ref="projectRolling"/>-->
-<!--            <appender-ref ref="projectErrorRolling"/>-->
-<!--        </AsyncLogger>-->
-
-        <AsyncLogger name="com.alibaba.nacos.client" level="${LOGGER_LEVEL2}" additivity="false">
+        <AsyncLogger name="com.alibaba.nacos.client" level="ERROR" additivity="false">
             <appender-ref ref="Console"/>
             <appender-ref ref="projectRolling"/>
             <appender-ref ref="projectErrorRolling"/>
