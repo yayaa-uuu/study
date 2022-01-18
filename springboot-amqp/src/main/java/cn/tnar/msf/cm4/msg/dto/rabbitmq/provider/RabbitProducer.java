@@ -21,7 +21,7 @@ public class RabbitProducer {
     private static final String EXCHANGE_NAME = " exchange demo ";
     private static final String ROUTING_KEY = " routingkey demo ";
     private static final String QUEUE_NAME = "queue demo ";
-    private static final String IP_ADDRESS = "192.168.0.2";
+    private static final String IP_ADDRESS = "119.91.96.216";
     private static final int PORT = 5672;//RabbitMQ 服务端默认端口号为 5672
 
     public static void main(String[] args) throws IOException,
