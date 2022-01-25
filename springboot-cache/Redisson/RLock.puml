@@ -1,0 +1,19 @@
+@startuml
+
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+用户 --> redis: thread1
+用户 --> redis: thread2
+
+redis --> redis:thread1 run
+redis --> redis:thread1 lock    10s remove
+redis --> redis:thread1 end
+
+redis --> redis:thread2 wait
+redis --> redis:thread2 10s Nouchi     lock   会重新刷新释放时间吗
+
+@enduml
+

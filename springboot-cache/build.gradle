@@ -3,7 +3,7 @@ configurations {
 }
 dependencies {
     implementation 'org.projectlombok:lombok:1.18.18'
-    compile fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'junit:junit:4.13.1'
     implementation 'org.apache.commons:commons-pool2'
     implementation 'com.lmax:disruptor'
     implementation 'org.apache.skywalking:apm-toolkit-log4j-2.x'
@@ -16,6 +16,8 @@ dependencies {
     testImplementation group: 'junit', name: 'junit'
     implementation 'org.apache.commons:commons-lang3'
     compile 'com.github.ben-manes.caffeine:caffeine:2.6.2'
+    implementation 'com.google.guava:guava:31.0.1-jre'
+    implementation 'org.redisson:redisson'
 
 }
 
