@@ -1,4 +1,4 @@
-package cn.tnar.msf.cm4.msg.dto.rabbitmq.dlx;
+package com.wx.rabbitmq.dlx;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
@@ -10,6 +10,14 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeoutException;
 
+/**
+ * 交换机类型 fanout,   bindingkey  所有绑定的队列都会收到生产者发送到队列的消息
+ * direct             bindingkey  准确匹配
+ * topic              bindingkey  可使用通配符
+ * headers              少用
+ * <p>
+ * 死信队列，可看作延迟队列。
+ */
 public class DLXExchangeTest {
 
     private static final String IP_ADDRESS = "119.91.96.216";
@@ -24,8 +32,9 @@ public class DLXExchangeTest {
         Connection connection = factory.newConnection();// 创建连接
         Channel channel = connection.createChannel();// 创建信道
         channel.exchangeDeclare("exchange.dlx", "direct", true);
+
         channel.exchangeDeclare("exchange.normal", "fanout", true);
-        Map<String, Object> map = new HashMap<String, Object>();
+        Map<String, Object> map = new HashMap<>();
         map.put("x-message-ttl", 10000);
         map.put("x-dead-letter-exchange", "exchange.dlx");
         map.put("x-dead-letter-routing-key", "routingkey");

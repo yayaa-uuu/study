@@ -1,4 +1,4 @@
-package cn.tnar.msf.cm4.msg.dto.rabbitmq.consumer;
+package com.wx.rabbitmq.consumer;
 
 import com.rabbitmq.client.*;
 

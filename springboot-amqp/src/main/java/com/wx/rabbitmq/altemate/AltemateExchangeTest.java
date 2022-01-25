@@ -1,4 +1,4 @@
-package cn.tnar.msf.cm4.msg.dto.rabbitmq.altemate;
+package com.wx.rabbitmq.altemate;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
@@ -22,7 +22,7 @@ public class AltemateExchangeTest {
         factory.setPassword("123456");
         Connection connection = factory.newConnection();// 创建连接
         Channel channel = connection.createChannel();// 创建信道
-        Map<String, Object> map = new HashMap<String, Object>();
+        Map<String, Object> map = new HashMap<>();
         map.put("alternate-exchange", "myAe");
         channel.exchangeDeclare("normalExchange", "direct", true, false, map);
         channel.exchangeDeclare("myAe", "fanout", true, false, null);
