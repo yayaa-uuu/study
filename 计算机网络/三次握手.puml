@@ -1,0 +1,6 @@
+@startuml
+C端 -> S端: SYN
+C端 <- S端: SYN + ack
+C端 -> S端: ack
+@enduml
+
