@@ -38,6 +38,7 @@ dependencies {
         api 'com.github.xiaoymin:knife4j-spring-boot-starter:3.0.2'
         api group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
         api 'io.github.resilience4j:resilience4j-spring-boot2:1.7.0'
+        api 'org.redisson:redisson:3.16.4'
 
 
     }
