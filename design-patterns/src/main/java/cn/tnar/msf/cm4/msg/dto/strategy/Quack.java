@@ -1,7 +1,0 @@
-package cn.tnar.msf.cm4.msg.dto.strategy;
-
-public class Quack implements QuackBehavior {
-	public void quack() {
-		System.out.println("Quack");
-	}
-}
