@@ -8,7 +8,7 @@
         <option name="testRunner" value="PLATFORM" />
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="$PROJECT_DIR$/../../../gradle/gradle-6.9.1" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../../../gradle/gradle-6.9.1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -31,9 +31,10 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/计算机网络/Http" />
-        <option name="gradleHome" value="$PROJECT_DIR$/../../../gradle/gradle-6.9.1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/计算机网络/http" />
