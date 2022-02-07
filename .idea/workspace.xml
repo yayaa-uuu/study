@@ -4,15 +4,166 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35067aab-a5d4-49cd-9c20-50796e56b929" name="Default Changelist" comment="上传云云单元测试" />
+    <list default="true" id="35067aab-a5d4-49cd-9c20-50796e56b929" name="Default Changelist" comment="1.计算机网络&#10;增加5层协议思维导图文档&#10;三次握手四次挥手uml">
+      <change afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/wx/sort/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/src/main/resources/BUB.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/src/main/resources/INS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java8/src/main/java/com/wx/io/AIO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java8/src/main/java/com/wx/io/BIO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/juc/src/main/java/com/wx/lock/CachedData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/juc/src/main/java/com/wx/lock/FairAndUnfair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/juc/src/main/java/com/wx/lock/ReadLockJumpQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/juc/src/main/java/com/wx/lock/ReadWriteLockDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/juc/src/main/java/com/wx/lock/ReentrantLockTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/juc/src/main/java/com/wx/producerconsumermodel/MyBlockingQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/juc/src/main/java/com/wx/producerconsumermodel/MyBlockingQueueForCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/juc/src/main/java/com/wx/producerconsumermodel/WaitStyle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/juc/src/main/java/com/wx/unsafe/MayDeadLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/juc/src/main/java/com/wx/unsafe/UnsafeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/juc/src/main/java/com/wx/unsafe/WrongInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/juc/src/main/java/com/wx/unsafe/WrongResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/juc/src/main/java/com/wx/waitnotify/WaitNotifyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-webflux/src/main/java/com/wx/controller/MonoControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/计算机网络/UDP/UDPClient.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/计算机网络/UDP/UDPServer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试/腾讯音乐.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0ae8c6f9-7164-44b7-99bb-6f91185dbac0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0ae8c6f9-7164-44b7-99bb-6f91185dbac0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/wx/sort/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/wx/sort/Sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/CloudToCloudApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/CloudToCloudApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/T17_10.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/T17_10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/T1833.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/T1833.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/T726.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/T726.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/adapter/Duck.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/adapter/Duck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/adapter/DuckTestDrive.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/adapter/DuckTestDrive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/adapter/MallardDuck.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/adapter/MallardDuck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/adapter/Turkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/adapter/Turkey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/adapter/TurkeyAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/adapter/TurkeyAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/adapter/WildTurkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/adapter/WildTurkey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/behavioralmode/Iterator/MenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/behavioralmode/Iterator/MenuItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/behavioralmode/Iterator/PancakeHouseMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/behavioralmode/Iterator/PancakeHouseMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/creationmode/factory/AbstractFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/creationmode/factory/AbstractFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/creationmode/factory/method/ChineseFoodFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/creationmode/factory/method/ChineseFoodFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/creationmode/factory/method/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/creationmode/factory/method/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/creationmode/factory/method/FoodFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/creationmode/factory/method/FoodFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/creationmode/factory/simple/SimpleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/creationmode/factory/simple/SimpleFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/creationmode/singleton/hungry/EnumSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/creationmode/singleton/hungry/EnumSingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/creationmode/singleton/hungry/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/creationmode/singleton/hungry/Singleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/creationmode/singleton/lazy/DoubleCheckSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/creationmode/singleton/lazy/DoubleCheckSingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/creationmode/singleton/lazy/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/creationmode/singleton/lazy/Singleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/strategy/Duck.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/strategy/Duck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/strategy/FlyBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/strategy/FlyBehavior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/strategy/FlyWithWings.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/strategy/FlyWithWings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/strategy/MallardDuck.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/strategy/MallardDuck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/strategy/Quack.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/strategy/Quack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/strategy/QuackBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/strategy/QuackBehavior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/strategy/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/strategy/Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/cn/tnar/msf/cm4/msg/dto/strategy/strategy.md" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/wx/strategy/strategy.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http/src/main/java/cn/tnar/msf/cm4/msg/dto/FluxApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-webflux/src/main/java/com/wx/FluxApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http/src/main/java/cn/tnar/msf/cm4/msg/dto/springhttp/RestTemplateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/http/src/main/java/com/wx/springhttp/RestTemplateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http/src/main/java/cn/tnar/msf/cm4/msg/dto/webclient/WebClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/http/src/main/java/com/wx/webclient/WebClientTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http/src/test/java/cn/tnar/msf/cm4/msg/dto/AsynHttpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/http/src/test/java/com/wx/AsynHttpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http/src/test/java/cn/tnar/msf/cm4/msg/dto/FluxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/http/src/test/java/com/wx/FluxTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http/src/test/java/cn/tnar/msf/cm4/msg/dto/HttpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/http/src/test/java/com/wx/HttpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http/src/test/java/cn/tnar/msf/cm4/msg/dto/MonoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/http/src/test/java/com/wx/MonoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/src/main/java/cn/tnar/msf/cm4/msg/dto/entity/fast/FastContentValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/json/src/main/java/com/wx/entity/fast/FastContentValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/src/main/java/cn/tnar/msf/cm4/msg/dto/entity/fast/FastJsonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/json/src/main/java/com/wx/entity/fast/FastJsonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/src/main/java/cn/tnar/msf/cm4/msg/dto/entity/fast/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/json/src/main/java/com/wx/entity/fast/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/src/main/java/cn/tnar/msf/cm4/msg/dto/entity/fast/TextInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/json/src/main/java/com/wx/entity/fast/TextInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/src/main/java/cn/tnar/msf/cm4/msg/dto/entity/gosn/GonsJsonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/json/src/main/java/com/wx/entity/gosn/GonsJsonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/src/main/java/cn/tnar/msf/cm4/msg/dto/entity/jack/JackJsonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/json/src/main/java/com/wx/entity/jack/JackJsonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/juc/src/main/java/com/wx/aqs/semaphore/SemaphoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/juc/src/main/java/com/wx/aqs/semaphore/SemaphoreTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-springboot-websocket/src/main/java/cn/tnar/msf/cm4/NettyWebSocketApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-springboot-websocket/src/main/java/com/wx/NettyWebSocketApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-springboot-websocket/src/main/java/cn/tnar/msf/cm4/msg/dto/Message3.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-springboot-websocket/src/main/java/com/wx/msg/Message3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-springboot-websocket/src/main/java/cn/tnar/msf/cm4/msg/dto/Respond.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-springboot-websocket/src/main/java/com/wx/msg/Respond.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-springboot-websocket/src/main/java/cn/tnar/msf/cm4/msg/dto/RespondOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-springboot-websocket/src/main/java/com/wx/msg/RespondOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-springboot-websocket/src/main/java/cn/tnar/msf/cm4/msg/dto/Transmission.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-springboot-websocket/src/main/java/com/wx/msg/Transmission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-springboot-websocket/src/main/java/cn/tnar/msf/cm4/msg/dto/TransmissionOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-springboot-websocket/src/main/java/com/wx/msg/TransmissionOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-springboot-websocket/src/main/java/cn/tnar/msf/cm4/websocket/MyWebSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-springboot-websocket/src/main/java/com/wx/websocket/MyWebSocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-springboot-websocket/src/main/resources/proto/message.proto" beforeDir="false" afterPath="$PROJECT_DIR$/netty-springboot-websocket/src/main/resources/proto/message.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-springboot-websocket/src/test/java/com/wx/WebClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-springboot-websocket/src/test/java/com/wx/WebClientTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/platform/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-Idempotent/src/main/java/cn/tnar/msf/cm4/msg/dto/IdempotentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-Idempotent/src/main/java/com/wx/IdempotentApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-Idempotent/src/main/java/cn/tnar/msf/cm4/msg/dto/annotation/Idempotent.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-Idempotent/src/main/java/com/wx/annotation/Idempotent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-Idempotent/src/main/java/cn/tnar/msf/cm4/msg/dto/aspect/IdempotentAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-Idempotent/src/main/java/com/wx/aspect/IdempotentAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-Idempotent/src/main/java/cn/tnar/msf/cm4/msg/dto/aspect/MethodAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-Idempotent/src/main/java/com/wx/aspect/MethodAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-Idempotent/src/main/java/cn/tnar/msf/cm4/msg/dto/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-Interceptor/src/main/java/com/wx/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-Idempotent/src/main/java/cn/tnar/msf/cm4/msg/dto/controller/AspectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-Interceptor/src/main/java/com/wx/controller/AspectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-Idempotent/src/main/java/cn/tnar/msf/cm4/msg/dto/controller/RedisIdempotentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-Idempotent/src/main/java/com/wx/controller/RedisIdempotentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-Idempotent/src/main/java/cn/tnar/msf/cm4/msg/dto/entity/StudyRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-Idempotent/src/main/java/com/wx/entity/StudyRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-Idempotent/src/test/java/cn/tnar/msf/cm4/msg/dto/Parent.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-Interceptor/src/test/java/com/wx/Parent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-Idempotent/src/test/java/cn/tnar/msf/cm4/msg/dto/ReflectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-Idempotent/src/test/java/com/wx/ReflectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-Interceptor/src/main/java/cn/tnar/msf/cm4/msg/dto/DataApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-Interceptor/src/main/java/com/wx/DataApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-Interceptor/src/main/java/cn/tnar/msf/cm4/msg/dto/annotation/Idempotent.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-Interceptor/src/main/java/com/wx/annotation/Idempotent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-Interceptor/src/main/java/cn/tnar/msf/cm4/msg/dto/aspect/IdempotentAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-Interceptor/src/main/java/com/wx/aspect/IdempotentAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-Interceptor/src/main/java/cn/tnar/msf/cm4/msg/dto/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-Idempotent/src/main/java/com/wx/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-Interceptor/src/main/java/cn/tnar/msf/cm4/msg/dto/controller/AspectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-Idempotent/src/main/java/com/wx/controller/AspectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-Interceptor/src/main/java/cn/tnar/msf/cm4/msg/dto/controller/RedisIdempotentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-Interceptor/src/main/java/com/wx/controller/RedisIdempotentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-Interceptor/src/main/java/cn/tnar/msf/cm4/msg/dto/entity/StudyRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-Interceptor/src/main/java/com/wx/entity/StudyRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-Interceptor/src/main/java/cn/tnar/msf/cm4/msg/dto/filter/LogFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-Interceptor/src/main/java/com/wx/filter/LogFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-Interceptor/src/main/java/cn/tnar/msf/cm4/msg/dto/interceptor/LogInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-Interceptor/src/main/java/com/wx/interceptor/LogInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-Interceptor/src/test/java/cn/tnar/msf/cm4/msg/dto/Parent.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-Idempotent/src/test/java/com/wx/Parent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-Interceptor/src/test/java/cn/tnar/msf/cm4/msg/dto/ReflectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-Interceptor/src/test/java/com/wx/ReflectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-data/src/main/java/cn/tnar/msf/cm4/msg/dto/DataApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-data/src/main/java/com/wx/DataApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-data/src/main/java/cn/tnar/msf/cm4/msg/dto/InitTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-data/src/main/java/com/wx/InitTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-data/src/main/java/cn/tnar/msf/cm4/msg/dto/controller/PropagationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-data/src/main/java/com/wx/controller/PropagationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-data/src/main/java/cn/tnar/msf/cm4/msg/dto/controller/RestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-data/src/main/java/com/wx/controller/RestTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-data/src/main/java/cn/tnar/msf/cm4/msg/dto/controller/TransactionalControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-data/src/main/java/com/wx/controller/TransactionalControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-data/src/main/java/cn/tnar/msf/cm4/msg/dto/controller/UniqueKeyControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-data/src/main/java/com/wx/controller/UniqueKeyControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-data/src/main/java/cn/tnar/msf/cm4/msg/dto/dao/TThirdAdmissionRelationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-data/src/main/java/com/wx/dao/TThirdAdmissionRelationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-data/src/main/java/cn/tnar/msf/cm4/msg/dto/entity/ThirdCarInRelation.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-data/src/main/java/com/wx/entity/ThirdCarInRelation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-data/src/main/java/cn/tnar/msf/cm4/msg/dto/service/TThirdAdmissionRelationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-data/src/main/java/com/wx/service/TThirdAdmissionRelationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-data/src/main/java/cn/tnar/msf/cm4/msg/dto/service/ThirdCarInRelationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-data/src/main/java/com/wx/service/ThirdCarInRelationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-data/src/main/java/cn/tnar/msf/cm4/msg/dto/util/TransactionManagerUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-data/src/main/java/com/wx/util/TransactionManagerUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-webflux/out/production/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-webflux/out/production/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-webflux/out/production/resources/mapper/TThirdAdmissionRelationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-webflux/out/production/resources/mapper/TThirdAdmissionRelationMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-webflux/src/main/java/cn/tnar/msf/cm4/msg/dto/FluxApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/http/src/main/java/com/wx/FluxApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-webflux/src/main/java/cn/tnar/msf/cm4/msg/dto/controller/MonoControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-webflux/src/main/java/cn/tnar/msf/cm4/msg/dto/entity/CustomizeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-webflux/src/main/java/com/wx/entity/CustomizeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-webflux/src/test/java/cn/tnar/msf/cm4/msg/dto/AsynHttpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-webflux/src/test/java/com/wx/AsynHttpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-webflux/src/test/java/cn/tnar/msf/cm4/msg/dto/FluxMergeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-webflux/src/test/java/com/wx/FluxMergeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-webflux/src/test/java/cn/tnar/msf/cm4/msg/dto/FluxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-webflux/src/test/java/com/wx/FluxTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-webflux/src/test/java/cn/tnar/msf/cm4/msg/dto/HttpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-webflux/src/test/java/com/wx/HttpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-webflux/src/test/java/cn/tnar/msf/cm4/msg/dto/MonoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-webflux/src/test/java/com/wx/MonoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/计算机网络/5层协议.md" beforeDir="false" afterPath="$PROJECT_DIR$/计算机网络/5层协议.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/计算机网络/四次挥手.puml" beforeDir="false" afterPath="$PROJECT_DIR$/计算机网络/四次挥手.puml" afterDir="false" />
+    </list>
     <list id="cbf661fa-4bd1-4fda-a74e-5d1069e4cf90" name="上传云云单元测试" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/计算机网络/Http">
       <ProjectState />
     </projectState>
   </component>
@@ -35,11 +186,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="study" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="study" type="f1a62948:ProjectNode" />
-                <item name="netty-springboot-websocket" type="2d1252cf:ModuleNode" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -61,7 +207,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="dev3" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -101,6 +247,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="configurable..is.expanded" value="false" />
@@ -108,13 +255,12 @@
     <property name="extract.method.default.visibility" value="private" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/json/src/main/java/com/wx/demo/entity" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/java8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/juc/src/main/java/com/wx/waitnotify" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.14124292" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="ReactorSettings">
@@ -126,34 +272,86 @@
       <recent name="com.wx.demo.datastructure" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IntelliJ IDEA 2021.2.3\IdeaProjects\study\计算机网络" />
+      <recent name="D:\IntelliJ IDEA 2021.2.3\IdeaProjects\study\计算机网络\Http" />
+      <recent name="D:\IntelliJ IDEA 2021.2.3\IdeaProjects\study\springboot-cache\Redisson" />
       <recent name="D:\ideawork\study\java8" />
       <recent name="D:\ideawork\study\netty-springboot-websocket\src\main\java\com\wx\demo\proto" />
-      <recent name="D:\ideawork\study\netty-springboot-websocket\src\main\resources" />
-      <recent name="D:\ideawork\sudty\springboot-data\src\main\java\com\wx\demo" />
-      <recent name="D:\ideawork\sudty\springboot-data\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IntelliJ IDEA 2021.2.3\IdeaProjects\study\计算机网络\UDP" />
       <recent name="D:\ideawork\study\netty-springboot-websocket\src\main\resources\proto" />
       <recent name="D:\ideawork\study\go" />
       <recent name="D:\ideawork\study" />
       <recent name="D:\ideawork\sudty\springboot-data\src\main\resources\mapper" />
-      <recent name="D:\ideawork\sudty\design-patterns" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wx.http.controller" />
+      <recent name="com.wx.config" />
+      <recent name="com.wx.aqs.cyclicbarrier" />
       <recent name="com.wx.timer" />
       <recent name="reference" />
-      <recent name="com.wx.demo.threadtest.callable" />
-      <recent name="com.wx.demo" />
-      <recent name="com.wx.demo.strategy" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ListTest.remove2">
-    <configuration name="RetryTimerTaskTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wx.timer.RetryTimerTaskTest" />
+  <component name="RunManager" selected="Application.ReentrantLockTest">
+    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wx.sort.BubbleSort" />
+      <module name="study.algorithm.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wx.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Controller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.tnar.msf.cm4.msg.dto.controller.Controller" />
+      <module name="study.springboot-webflux.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.tnar.msf.cm4.msg.dto.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GuavaCache" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.tnar.msf.cm4.msg.dto.cache.GuavaCache" />
+      <module name="study.springboot-cache.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.tnar.msf.cm4.msg.dto.cache.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDKProxyFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wx.proxy.jdk.JDKProxyFactory" />
+      <module name="study.java8.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wx.proxy.jdk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReentrantLockTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wx.lock.ReentrantLockTest" />
       <module name="study.juc.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wx.timer.*" />
+          <option name="PATTERN" value="com.wx.lock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -174,67 +372,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wx.finaltest.StringTest" />
-      <module name="study.java8.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wx.finaltest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WheelTimeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wx.timer.WheelTimeTest" />
-      <module name="study.juc.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wx.timer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ListTest.remove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="study.java8.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wx.collection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.wx.collection" />
-      <option name="MAIN_CLASS_NAME" value="com.wx.collection.ListTest" />
-      <option name="METHOD_NAME" value="remove" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ListTest.remove2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="study.java8.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wx.collection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.wx.collection" />
-      <option name="MAIN_CLASS_NAME" value="com.wx.collection.ListTest" />
-      <option name="METHOD_NAME" value="remove2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AmqpApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="study.springboot-amqp.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.tnar.msf.cm4.msg.dto.AmqpApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AmqpApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="study.springboot-amqp.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.rabbitmq.AmqpApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -253,6 +400,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CacheApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="study.springboot-cache.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.CacheApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CacheApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="study.springboot-cache.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.demo.CacheApplication" />
@@ -263,6 +417,13 @@
     <configuration name="CloudToCloudApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="study.design-patterns.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.tnar.msf.cm4.msg.dto.CloudToCloudApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CloudToCloudApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="study.design-patterns.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.CloudToCloudApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -291,6 +452,20 @@
     <configuration name="DataApplication (3)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="study.springboot-Interceptor.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.tnar.msf.cm4.msg.dto.DataApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataApplication (4)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="study.springboot-data.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.DataApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataApplication (5)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="study.springboot-Interceptor.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.DataApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -330,6 +505,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FluxApplication (5)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="study.http.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.FluxApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FluxApplication (6)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="study.springboot-webflux.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.FluxApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FluxApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="study.juc.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.FluxApplication" />
@@ -337,9 +526,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HttpApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="http.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.http.HttpApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IdempotentApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="study.springboot-Idempotent.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.tnar.msf.cm4.msg.dto.IdempotentApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IdempotentApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="study.springboot-Idempotent.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.IdempotentApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -353,18 +556,18 @@
     </configuration>
     <configuration name="NettyWebSocketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="study.netty-springboot-websocket.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.tnar.msf.cm4.NettyWebSocketApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.NettyWebSocketApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.StackSOF" />
-      <item itemvalue="Application.WheelTimeTest" />
-      <item itemvalue="Application.RetryTimerTaskTest" />
-      <item itemvalue="Application.StringTest" />
-      <item itemvalue="JUnit.ListTest.remove" />
-      <item itemvalue="JUnit.ListTest.remove2" />
+      <item itemvalue="Application.Controller" />
+      <item itemvalue="Application.JDKProxyFactory" />
+      <item itemvalue="Application.GuavaCache" />
+      <item itemvalue="Application.BubbleSort" />
+      <item itemvalue="Application.ReentrantLockTest" />
       <item itemvalue="Spring Boot.AmqpApplication (1)" />
       <item itemvalue="Spring Boot.AmqpApplication" />
       <item itemvalue="Spring Boot.CacheApplication (1)" />
@@ -383,14 +586,23 @@
       <item itemvalue="Spring Boot.IdempotentApplication (1)" />
       <item itemvalue="Spring Boot.IdempotentApplication" />
       <item itemvalue="Spring Boot.NettyWebSocketApplication" />
+      <item itemvalue="Spring Boot.CloudToCloudApplication (2)" />
+      <item itemvalue="Spring Boot.FluxApplication (5)" />
+      <item itemvalue="Spring Boot.AmqpApplication (2)" />
+      <item itemvalue="Spring Boot.CacheApplication (2)" />
+      <item itemvalue="Spring Boot.DataApplication (4)" />
+      <item itemvalue="Spring Boot.IdempotentApplication (2)" />
+      <item itemvalue="Spring Boot.DataApplication (5)" />
+      <item itemvalue="Spring Boot.FluxApplication (6)" />
+      <item itemvalue="Spring Boot.HttpApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ListTest.remove2" />
-        <item itemvalue="JUnit.ListTest.remove" />
-        <item itemvalue="Application.StringTest" />
-        <item itemvalue="Application.RetryTimerTaskTest" />
-        <item itemvalue="Application.WheelTimeTest" />
+        <item itemvalue="Application.ReentrantLockTest" />
+        <item itemvalue="Application.BubbleSort" />
+        <item itemvalue="Application.GuavaCache" />
+        <item itemvalue="Application.JDKProxyFactory" />
+        <item itemvalue="Application.Controller" />
       </list>
     </recent_temporary>
   </component>
@@ -525,6 +737,27 @@
       <workItem from="1632828249831" duration="8716000" />
       <workItem from="1632965574926" duration="680000" />
       <workItem from="1633592342793" duration="1065000" />
+      <workItem from="1636270289361" duration="6440000" />
+      <workItem from="1636450566524" duration="121000" />
+      <workItem from="1636450709798" duration="18532000" />
+      <workItem from="1637594378824" duration="5847000" />
+      <workItem from="1637760506354" duration="4166000" />
+      <workItem from="1638431189738" duration="6562000" />
+      <workItem from="1638766938023" duration="1821000" />
+      <workItem from="1641395100924" duration="3832000" />
+      <workItem from="1641571233898" duration="4929000" />
+      <workItem from="1641610202050" duration="1519000" />
+      <workItem from="1641613848638" duration="3251000" />
+      <workItem from="1641742548518" duration="8500000" />
+      <workItem from="1642350351967" duration="1003000" />
+      <workItem from="1642434154468" duration="353000" />
+      <workItem from="1642515237530" duration="297000" />
+      <workItem from="1643036559138" duration="5607000" />
+      <workItem from="1643118108603" duration="15971000" />
+      <workItem from="1643456660886" duration="1138000" />
+      <workItem from="1643457845403" duration="2559000" />
+      <workItem from="1643553533381" duration="3931000" />
+      <workItem from="1644198247514" duration="2133000" />
     </task>
     <task id="LOCAL-00001" summary="cmtex电子发票">
       <created>1621415290056</created>
@@ -540,7 +773,35 @@
       <option name="project" value="LOCAL" />
       <updated>1624270589564</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="验证hashMap线程不安全">
+      <created>1636473072345</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1636473072345</updated>
+    </task>
+    <task id="LOCAL-00004" summary="增加代理实现，静态代理，jdk动态代理和cglib动态代理">
+      <created>1642001852230</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1642001852230</updated>
+    </task>
+    <task id="LOCAL-00005" summary="cache 中增加redisson demo，测试RLock 接口使用">
+      <created>1643118520676</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1643118520676</updated>
+    </task>
+    <task id="LOCAL-00006" summary="1.计算机网络&#10;增加5层协议思维导图文档&#10;三次握手四次挥手uml">
+      <created>1643463903831</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1643463903831</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -562,7 +823,11 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="cmtex电子发票" />
     <MESSAGE value="上传云云单元测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="上传云云单元测试" />
+    <MESSAGE value="验证hashMap线程不安全" />
+    <MESSAGE value="增加代理实现，静态代理，jdk动态代理和cglib动态代理" />
+    <MESSAGE value="cache 中增加redisson demo，测试RLock 接口使用" />
+    <MESSAGE value="1.计算机网络&#10;增加5层协议思维导图文档&#10;三次握手四次挥手uml" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.计算机网络&#10;增加5层协议思维导图文档&#10;三次握手四次挥手uml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -608,17 +873,17 @@
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/springboot-data/src/main/java/cn/tnar/msf/cm4/msg/dto/service/TThirdAdmissionRelationServiceImpl.java</url>
+          <url>file://$PROJECT_DIR$/springboot-data/src/main/java/com/wx/msg/dto/service/TThirdAdmissionRelationServiceImpl.java</url>
           <line>22</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/springboot-webflux/src/test/java/cn/tnar/msf/cm4/msg/dto/MonoTest.java</url>
+          <url>file://$PROJECT_DIR$/springboot-webflux/src/test/java/com/wx/msg/dto/MonoTest.java</url>
           <line>69</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/springboot-data/src/main/java/cn/tnar/msf/cm4/msg/dto/controller/UniqueKeyControllerTest.java</url>
+          <url>file://$PROJECT_DIR$/springboot-data/src/main/java/com/wx/msg/dto/controller/UniqueKeyControllerTest.java</url>
           <line>31</line>
           <option name="timeStamp" value="39" />
         </line-breakpoint>

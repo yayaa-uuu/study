@@ -20251,119 +20251,119 @@ node_id</ColNames>
 node_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="4091" parent="452" name="region_code">
+    <column id="4091" parent="452" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4092" parent="452" name="node_id">
+      <Position>2</Position>
+      <DataType>smallint(6)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4093" parent="452" name="region_code">
       <Position>3</Position>
       <DataType>varchar(14)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4092" parent="452" name="agent_id">
+    <column id="4094" parent="452" name="agent_id">
       <Position>4</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4093" parent="452" name="park_code">
+    <column id="4095" parent="452" name="park_code">
       <Position>5</Position>
       <DataType>varchar(12)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4094" parent="452" name="seat_code">
+    <column id="4096" parent="452" name="seat_code">
       <Position>6</Position>
       <DataType>varchar(18)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4095" parent="452" name="seatno">
+    <column id="4097" parent="452" name="seatno">
       <Position>7</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4096" parent="452" name="bay_code">
+    <column id="4098" parent="452" name="bay_code">
       <Position>8</Position>
       <DataType>varchar(18)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4097" parent="452" name="parkbegin">
+    <column id="4099" parent="452" name="parkbegin">
       <Position>9</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4098" parent="452" name="parkend">
+    <column id="4100" parent="452" name="parkend">
       <Position>10</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4099" parent="452" name="parktime">
+    <column id="4101" parent="452" name="parktime">
       <Position>11</Position>
       <Comment> 离场后计算</Comment>
       <DataType>smallint(6)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4100" parent="452" name="amt">
+    <column id="4102" parent="452" name="amt">
       <Position>12</Position>
       <DataType>decimal(12,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4101" parent="452" name="paydate">
+    <column id="4103" parent="452" name="paydate">
       <Position>13</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4102" parent="452" name="sysbatch">
+    <column id="4104" parent="452" name="sysbatch">
       <Position>14</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4103" parent="452" name="systrace">
+    <column id="4105" parent="452" name="systrace">
       <Position>15</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4104" parent="452" name="magcflag">
+    <column id="4106" parent="452" name="magcflag">
       <Position>16</Position>
       <Comment>1-有车 2-无车</Comment>
       <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4105" parent="452" name="uploadtime">
+    <column id="4107" parent="452" name="uploadtime">
       <Position>17</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <column id="4106" parent="452" name="car_id">
+    <column id="4108" parent="452" name="car_id">
       <Position>18</Position>
       <Comment>车牌号</Comment>
       <DataType>varchar(16)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
     </column>
-    <column id="4107" parent="452" name="toll_no">
+    <column id="4109" parent="452" name="toll_no">
       <Position>19</Position>
       <Comment>收费员编号</Comment>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
     </column>
-    <column id="4108" parent="452" name="intime">
+    <column id="4110" parent="452" name="intime">
       <Position>20</Position>
       <Comment>入场时间</Comment>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>0</DefaultExpression>
     </column>
-    <column id="4109" parent="452" name="outtime">
+    <column id="4111" parent="452" name="outtime">
       <Position>21</Position>
       <Comment>出场时间</Comment>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>0</DefaultExpression>
-    </column>
-    <column id="4110" parent="452" name="id">
-      <Position>1</Position>
-      <DataType>bigint(20)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="4111" parent="452" name="node_id">
-      <Position>2</Position>
-      <DataType>smallint(6)|0s</DataType>
-      <NotNull>1</NotNull>
     </column>
     <key id="4112" parent="452" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
@@ -42554,84 +42554,84 @@ setdate
 assets_digest_code</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="8185" parent="653" name="thirdcode">
+    <column id="8185" parent="653" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="8186" parent="653" name="thirdcode">
       <Position>2</Position>
       <DataType>varchar(8)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="8186" parent="653" name="setdate">
+    <column id="8187" parent="653" name="setdate">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="8187" parent="653" name="order_no">
+    <column id="8188" parent="653" name="order_no">
       <Position>4</Position>
       <DataType>varchar(64)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="8188" parent="653" name="thirdorder_no">
+    <column id="8189" parent="653" name="thirdorder_no">
       <Position>5</Position>
       <DataType>varchar(32)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="8189" parent="653" name="order_keytype">
+    <column id="8190" parent="653" name="order_keytype">
       <Position>6</Position>
       <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="8190" parent="653" name="order_keycode">
+    <column id="8191" parent="653" name="order_keycode">
       <Position>7</Position>
       <DataType>varchar(32)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="8191" parent="653" name="cust_id">
+    <column id="8192" parent="653" name="cust_id">
       <Position>8</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="8192" parent="653" name="sec_id">
+    <column id="8193" parent="653" name="sec_id">
       <Position>9</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="8193" parent="653" name="assets_code">
+    <column id="8194" parent="653" name="assets_code">
       <Position>10</Position>
       <DataType>varchar(32)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="8194" parent="653" name="assets_digest_code">
+    <column id="8195" parent="653" name="assets_digest_code">
       <Position>11</Position>
       <DataType>varchar(8)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="8195" parent="653" name="trade_datetime">
+    <column id="8196" parent="653" name="trade_datetime">
       <Position>12</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="8196" parent="653" name="trade_amt">
+    <column id="8197" parent="653" name="trade_amt">
       <Position>13</Position>
       <DataType>decimal(12,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="8197" parent="653" name="fee_amt">
+    <column id="8198" parent="653" name="fee_amt">
       <Position>14</Position>
       <DataType>decimal(12,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="8198" parent="653" name="result_code">
+    <column id="8199" parent="653" name="result_code">
       <Position>15</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="8199" parent="653" name="result_msg">
+    <column id="8200" parent="653" name="result_msg">
       <Position>16</Position>
       <DataType>varchar(1024)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="8200" parent="653" name="id">
-      <Position>1</Position>
-      <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
     <index id="8201" parent="653" name="AK_uniq_setthirdsrcorder">
