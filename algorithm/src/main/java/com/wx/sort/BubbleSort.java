@@ -2,6 +2,9 @@ package com.wx.sort;
 
 import java.util.Arrays;
 
+/**
+ * 冒泡排序
+ */
 public class BubbleSort {
 
     static int[] a = new int[]{1, 4, 3, 5, 2, -1};
