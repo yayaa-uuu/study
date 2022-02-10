@@ -52,7 +52,7 @@ class Service2 {
 
         User user = UserContextHolder.holder.get();
 
-        System.out.println("Service2拿到用户名：" + user.name);
+        System.out.println(Thread.currentThread().getName() + "Service2拿到用户名：" + user.name);
 
         new Service3().service3();
 
@@ -66,7 +66,7 @@ class Service3 {
 
         User user = UserContextHolder.holder.get();
 
-        System.out.println("Service3拿到用户名：" + user.name);
+        System.out.println(Thread.currentThread().getName() + "Service3拿到用户名：" + user.name);
 
         UserContextHolder.holder.remove();
 
