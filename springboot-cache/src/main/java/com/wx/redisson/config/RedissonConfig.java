@@ -1,4 +1,4 @@
-package com.wx.config;
+package com.wx.redisson.config;
 
 import org.redisson.Redisson;
 import org.redisson.api.RedissonClient;
@@ -7,23 +7,14 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
 public class RedissonConfig {
-
-    @Value("${spring.redis.host}")
-    private String host;
-    @Value("${spring.redis.port}")
-    private String port;
-    @Value("${spring.redis.password}")
-    private String password;
-
-    @Bean
     public RedissonClient redissonClient() {
         Config config = new Config();
         config.useSingleServer()
-                .setPassword(password)
-                .setAddress("redis://"+host + ":" + port)
+                .setPassword("yy123")
+                .setAddress("redis://" + "119.91.96.216" + ":" + 6379)
                 .setDatabase(8);
-        return Redisson.create(config);
+        RedissonClient redissonClient = Redisson.create(config);
+        return redissonClient;
     }
 }
