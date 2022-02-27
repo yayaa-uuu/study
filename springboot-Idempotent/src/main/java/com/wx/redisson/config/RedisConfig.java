@@ -1,4 +1,4 @@
-package com.wx.config;
+package com.wx.redisson.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CachingConfigurerSupport;
