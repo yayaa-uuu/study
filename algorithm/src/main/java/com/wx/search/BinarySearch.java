@@ -18,4 +18,20 @@ public class BinarySearch {
         }
         return -1;
     }
+
+    /**
+     * 递归
+     * @param nums
+     * @param key
+     * @param lo    左标记
+     * @param hi    右标记
+     * @return
+     */
+    public int binarySearch(int[] nums, int key, int lo, int hi) {
+        if (lo > hi) return -1;
+        int mid = lo + (lo + hi) / 2;
+        if (nums[mid] > key) return binarySearch(nums, key, lo, mid - 1);
+        else if (nums[mid] < key) return binarySearch(nums, key, mid + 1, hi);
+        else return mid;
+    }
 }
