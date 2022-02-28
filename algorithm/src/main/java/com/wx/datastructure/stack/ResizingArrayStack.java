@@ -24,10 +24,9 @@ public class ResizingArrayStack<T> implements Iterable<T> {
     private void resize(int max) {
         //将栈移动到一个大小为max的新数组
         T[] temp = (T[]) new Object[max];
-        for (int i = 0; i < N; i++) {
+        for (int i = 0; i < N; i++)
             temp[i] = a[i];
-            a = temp;
-        }
+        a = temp;
     }
 
     public void push(T t) {
