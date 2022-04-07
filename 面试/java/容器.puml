@@ -1,0 +1,48 @@
+```plantuml
+@startmindmap
+* Collection
+** list
+*** CopyOnWiterList
+*** Vector   Stack
+*** ArrayList
+*** linkedList
+** set
+*** HashSet   
+**** LinkedHashSet
+*** SortedSet
+**** TreeSet
+*** EnumSet
+*** CopyOnWiterSet
+*** ConcurrentSkipListSet
+
+** queue
+*** Deque
+**** ArrayDeque
+**** BockingDeque
+***** LinkedBockingDeque
+*** BockingQueue
+**** ArrayBockingQueue
+**** PriorityBockingQueue
+**** LinkedBockingQueue
+**** TransferBockingQueue
+***** LinkedTransferBockingQueue
+**** SynchronousQueue
+*** PriorityQueue
+*** ConcurrentLinkedQueue
+*** DelayQueue
+@endmindmap
+```
+
+```plantuml
+@startmindmap
+* Map
+** HashMap
+*** LinkedHashMap
+** TreeMap
+** weakHashMap
+** IdentityHashMap
+** ConcurrentHashMap
+** ConcurrentSkipListMap
+
+@endmindmap
+```
