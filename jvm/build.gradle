@@ -3,6 +3,7 @@ configurations {
 }
 dependencies {
     implementation 'org.openjdk.jol:jol-core:0.16'
+    implementation 'cglib:cglib-sample:3.3.0'
 
 
 }
