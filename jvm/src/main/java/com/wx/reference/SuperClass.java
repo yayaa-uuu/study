@@ -1,4 +1,4 @@
-package reference;
+package com.wx.reference;
 
 /**
  * 被动引用
