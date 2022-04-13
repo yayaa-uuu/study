@@ -20,7 +20,7 @@ package com.wx.sort;
  * @author wxli
  * @date 2021/8/8 21:10
  */
-public class Select extends Sort {
+public class Select extends AbstractSort {
     @Override
     public void sort(Comparable[] a) {
         int n = a.length;

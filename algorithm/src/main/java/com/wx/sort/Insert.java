@@ -9,7 +9,7 @@ package com.wx.sort;
  * @author wxli
  * @date 2021/8/10 22:50
  */
-public class Insert extends Sort{
+public class Insert extends AbstractSort {
 
     @Override
     public void sort(Comparable[] a) {

@@ -6,7 +6,7 @@ package com.wx.sort;
  * @author wxli
  * @date 2021/8/12 23:38
  */
-public class Quick3way extends Sort {
+public class Quick3way extends AbstractSort {
 
     private static void sort(Comparable[] a, int lo, int hi) {
         if (hi <= lo) return;

@@ -24,7 +24,7 @@ package com.wx.sort;
  * @author wxli
  * @date 2021/8/12 23:27
  */
-public class Quick extends Sort {
+public class Quick extends AbstractSort {
     @Override
     public void sort(Comparable[] a) {
         sort(a, 0, a.length - 1);

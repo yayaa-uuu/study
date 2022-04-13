@@ -6,7 +6,7 @@ package com.wx.sort;
  * @author wxli
  * @date 2021/8/12 23:21
  */
-public class MergeBU extends Sort {
+public class MergeBU extends AbstractSort {
     private static Comparable[] aux;     //归并所需的辅助数组
 
 

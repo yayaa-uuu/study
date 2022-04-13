@@ -9,7 +9,7 @@ package com.wx.sort;
  * @author wxli
  * @date 2021/8/10 23:04
  */
-public class Shell extends Sort {
+public class Shell extends AbstractSort {
     @Override
     public void sort(Comparable[] a) {
         //将a[]按升序排列

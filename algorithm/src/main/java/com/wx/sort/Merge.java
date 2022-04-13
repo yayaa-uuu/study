@@ -25,7 +25,7 @@ package com.wx.sort;
  * @author wxli
  * @date 2021/8/12 22:51
  */
-public class Merge extends Sort {
+public class Merge extends AbstractSort {
     private static Comparable[] aux;     //归并所需的辅助数组
 
     @Override
