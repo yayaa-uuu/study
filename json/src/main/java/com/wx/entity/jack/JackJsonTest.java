@@ -52,7 +52,7 @@ public class JackJsonTest {
             ObjectNode root = (ObjectNode) jsonNode;
 
             JsonNode info = jsonNode.get("info");
-            ArrayNode array= (ArrayNode) info;
+            ArrayNode array = (ArrayNode) info;
             System.out.println(array);
 
 
@@ -61,14 +61,14 @@ public class JackJsonTest {
 
             JsonNode value = array.get(0);
 
-            ObjectNode newValue= (ObjectNode) value;
+            ObjectNode newValue = (ObjectNode) value;
             ObjectNode jsonNodes = newValue.deepCopy();
 
             jsonNodes.remove("id");
             jsonNodes.remove("people");
 
 //            jsonNodes.set("id",id);
-            jsonNodes.set("people",people);
+            jsonNodes.set("people", people);
 
             array.add(jsonNodes);
             System.out.println(root);
@@ -79,5 +79,4 @@ public class JackJsonTest {
 
 
     }
-
 }
