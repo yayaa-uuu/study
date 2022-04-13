@@ -1,6 +1,12 @@
 @startuml
-C端 -> S端: SYN
-C端 <- S端: SYN + ack
-C端 -> S端: ack
-@enduml
+title 三次握手
 
+autonumber
+
+Control Client as C
+Control Server as S
+
+C -> S: SYN
+C <- S: SYN + ack
+C -> S: ack
+@enduml
