@@ -3,7 +3,7 @@
 @startmindmap
 * 事务
 **_ 原子性
-***_ 事务是最小的执行单位，不允许分割。事务的原子性确保动作要么d全部完成，要么完全不起作用
+***_ 事务是最小的执行单位，不允许分割。事务的原子性确保动作要么全部完成，要么完全不起作用
 **_ 一致性
 ***_  执行事务前后，数据保持一致
 ***_  例如转账业务中，无论事务是否成功，转账者和收款人的总额应该是不变的
@@ -139,9 +139,7 @@ end
 * 聚簇索引和非聚簇索引
 **_ 聚簇索引
 ***_ 特点
-****_ 索引结构和数据一起存放的索引。主键索引属于聚簇索引
-***_ 物理存放
-****_:在MySql中InnoDB引擎的表的 .idb 文件就包含了该表的索引和数据
+****_: 索引结构和数据一起存放的索引。主键索引属于聚簇索引
 对于InnoDB引擎来说，该表的索引(B+树)的每个非叶子节点存储索引，叶子节点存储索引和索引对应的数据;
 ***_ 优点
 ****_ 聚集索引的查询数据非常快，因为整个B+树本身就是一颗多叉平衡树，叶子节点也都是有序的，定位到索引的节点，就相当于定位到了数据。
@@ -152,7 +150,6 @@ end
 **_ 非聚簇索引
 ***_ 特点
 ****_ 非聚集索引即索引结构和数据分开存放的索引。
-***_ 物理存放
 ***_ 优点
 ****_ 更新代价比聚集索引要小 
 ***_ 缺点
@@ -167,9 +164,9 @@ end
 * 高性能索引策略 
 **_ 最左匹配 
 ***_ index(a,b)
-***_ select * from table where a=?  
-***_ select * from table where a=? ,b = ?    
-***_ select * from table where b = ?     失效 
+***_ select a,b from table where a=?  
+***_ select a,b from table where a=? ,b = ?    
+***_ select a,b from table where b = ?     失效 
 
 **_ 覆盖索引 
 ***_ index(a,name)
@@ -190,21 +187,81 @@ end
 
 ```plantuml
 @startmindmap
+title InnoDB MVCC
+
 * MVCC
+**_ 实现原理 
+***_ row_id 
+****_ 行ID(唯一键)    
+***_ transaction_id
+****_ 事务ID
+***_ roll_pointer
+****_ 回滚指针，指向上一个旧版本
 @endmindmap
 ```
+
+
 
 
 
 ```plantuml
 @startmindmap
+* 预写日志(WAL)
+**_ 在允许页缓存将页上的修改缓存起来的同时，保证数据库系统仍然具有持久性的语义
+**_:在那些受操作影响的缓存页被同步到磁盘上之前，将所有操作持久化到磁盘上。
+每个修改数据库状态的操作必须先写日志到磁盘上，然后才能修改相关页的内容;
+**_ 当发生崩溃时，使系统可以从操作日志中重建内存中丢失的更改。
+@endmindmap
+```
+
+```plantuml
+@startmindmap
+title InnoDB下日志文件
 * log
 **_ bin log
+***_ 主从，数据恢复
 **_ undo log
-**_ redo log
+***_ 数据库原子性保证
+***_ 记录数据的逻辑变化
+***_ 例每条INSERT 都会对应一条DELETE,每条UPDATE 都会对应一条相反的UPDATE
+**_ redo log 
+***_ 数据库持久性保证 
+***_ 可发生在事务提交前后，根据刷盘策略决定
+***_ 数据库后台线程每秒都会对该日志缓存进行刷盘动作
+@endmindmap
+```
+
+```plantuml
+@startmindmap
+title binlog 刷盘策略
+* sync_binlog
+**_ 0：不去强制要求，由系统自行判断何时写入磁盘；
+**_ 1：每次commit的时候都要将binlog写入磁盘；
+**_ N：每N个事务，才会将binlog写入磁盘。
+
+@endmindmap
+```
+```plantuml
+@startmindmap
+title redo_log 刷盘策略
+* innodb_flush_log_at_trx_commit
+**_ 0(延迟写) 提交事务不写磁盘 写入过程在master thread 中进行
+**_ 1(实时写，实时刷) 提交事务调用fsync
+**_ 2(实时写，延迟刷) 提交事务时不写磁盘  写入文件系统缓存
+
 @endmindmap
 ```
 
 
-
-#### 
+```plantuml
+@startuml
+title redo log 工作流程
+start
+:mysql;
+:dml;
+:redo log buffer;
+:os buffer;
+-> fsync();
+:log file;
+@enduml
+```
