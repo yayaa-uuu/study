@@ -1,0 +1,122 @@
+@startuml
+participant Actor
+Actor -> AbstractQueuedSynchronizer : acquire
+activate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer -> AbstractQueuedSynchronizer : tryAcquire
+activate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer --> AbstractQueuedSynchronizer
+deactivate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer -> AbstractQueuedSynchronizer : addWaiter
+activate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer -> AbstractQueuedSynchronizer : compareAndSetTail
+activate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer -> VarHandle : compareAndSet
+activate VarHandle
+VarHandle --> AbstractQueuedSynchronizer
+deactivate VarHandle
+AbstractQueuedSynchronizer --> AbstractQueuedSynchronizer
+deactivate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer -> AbstractQueuedSynchronizer : initializeSyncQueue
+activate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer -> VarHandle : compareAndSet
+activate VarHandle
+VarHandle --> AbstractQueuedSynchronizer
+deactivate VarHandle
+AbstractQueuedSynchronizer --> AbstractQueuedSynchronizer
+deactivate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer --> AbstractQueuedSynchronizer
+deactivate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer -> AbstractQueuedSynchronizer : acquireQueued
+activate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer -> Node : predecessor
+activate Node
+Node --> AbstractQueuedSynchronizer
+deactivate Node
+AbstractQueuedSynchronizer -> AbstractQueuedSynchronizer : tryAcquire
+activate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer --> AbstractQueuedSynchronizer
+deactivate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer -> AbstractQueuedSynchronizer : shouldParkAfterFailedAcquire
+activate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer -> Node : compareAndSetWaitStatus
+activate Node
+Node --> AbstractQueuedSynchronizer
+deactivate Node
+AbstractQueuedSynchronizer --> AbstractQueuedSynchronizer
+deactivate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer -> AbstractQueuedSynchronizer : parkAndCheckInterrupt
+activate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer -> LockSupport : park
+activate LockSupport
+LockSupport --> AbstractQueuedSynchronizer
+deactivate LockSupport
+AbstractQueuedSynchronizer -> Thread : interrupted
+activate Thread
+Thread --> AbstractQueuedSynchronizer
+deactivate Thread
+AbstractQueuedSynchronizer --> AbstractQueuedSynchronizer
+deactivate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer -> AbstractQueuedSynchronizer : cancelAcquire
+activate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer -> AbstractQueuedSynchronizer : compareAndSetTail
+activate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer -> VarHandle : compareAndSet
+activate VarHandle
+VarHandle --> AbstractQueuedSynchronizer
+deactivate VarHandle
+AbstractQueuedSynchronizer --> AbstractQueuedSynchronizer
+deactivate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer -> Node : compareAndSetNext
+activate Node
+Node --> AbstractQueuedSynchronizer
+deactivate Node
+AbstractQueuedSynchronizer -> Node : compareAndSetWaitStatus
+activate Node
+Node --> AbstractQueuedSynchronizer
+deactivate Node
+AbstractQueuedSynchronizer -> Node : compareAndSetNext
+activate Node
+Node --> AbstractQueuedSynchronizer
+deactivate Node
+AbstractQueuedSynchronizer -> AbstractQueuedSynchronizer : unparkSuccessor
+activate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer -> Node : compareAndSetWaitStatus
+activate Node
+Node --> AbstractQueuedSynchronizer
+deactivate Node
+AbstractQueuedSynchronizer -> LockSupport : unpark
+activate LockSupport
+LockSupport --> AbstractQueuedSynchronizer
+deactivate LockSupport
+AbstractQueuedSynchronizer --> AbstractQueuedSynchronizer
+deactivate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer --> AbstractQueuedSynchronizer
+deactivate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer -> AbstractQueuedSynchronizer : selfInterrupt
+activate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer -> Thread : currentThread
+activate Thread
+Thread --> AbstractQueuedSynchronizer
+deactivate Thread
+AbstractQueuedSynchronizer -> Thread : interrupt
+activate Thread
+Thread --> AbstractQueuedSynchronizer
+deactivate Thread
+AbstractQueuedSynchronizer --> AbstractQueuedSynchronizer
+deactivate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer --> AbstractQueuedSynchronizer
+deactivate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer -> AbstractQueuedSynchronizer : selfInterrupt
+activate AbstractQueuedSynchronizer
+AbstractQueuedSynchronizer -> Thread : currentThread
+activate Thread
+Thread --> AbstractQueuedSynchronizer
+deactivate Thread
+AbstractQueuedSynchronizer -> Thread : interrupt
+activate Thread
+Thread --> AbstractQueuedSynchronizer
+deactivate Thread
+AbstractQueuedSynchronizer --> AbstractQueuedSynchronizer
+deactivate AbstractQueuedSynchronizer
+return
+@enduml
