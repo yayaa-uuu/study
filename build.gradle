@@ -28,6 +28,8 @@ configure(subprojects.findAll {it.name != 'platform'}) {
 
     repositories {
         maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'http://repository.aspose.com/repo/' }
+        maven { url 'http://repository.springsource.com/maven/bundles/external' }
         mavenCentral()
     }
 
