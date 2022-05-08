@@ -19,26 +19,45 @@
 * 隔离级别
 **_ 未提交读
 ***_ 允许读取未提交的数据更变，
-***_ 脏读、不可重复读、幻读
 **_ 提交读
 ***_ 允许读取并发事务已经提交的数据，可以阻止脏读，但幻读和不可重复读仍可能发生
-***_ 不可重复读、幻读
 **_ 可重复读
 ***_ 对同一字段多次读取的结果是一致的，除非数据被事务自己所修改
-***_ 幻读
 **_ 串行化
 ***_ 最高隔离级别，完全服从ACID的隔离级别，所有事务依次逐个执行，这样事务之间完全不可能产生干扰，也就是说，该级别可以防止脏读，不可重复读和幻读。
 @endmindmap
 ```
 
+```plantuml
+@startmindmap
+* 并发事务可能出现的问题
+**_ 脏读
+***_ A事务读取到B事务未提交的修改
+**_ 不可重复读
+***_ A事务多次读取，出现不同结果(B事务提交前后，对A事务造成影响)
+**_ 幻读
+***_ A事务多次读取。B事务插入数据。
+@endmindmap
+```
+
+#### 各隔离级别下，并发事务问题对应
+
+|  | 脏读 | 不可重复读 | 幻读 |
+|--|--|--|--|
+| 未提交读 | √ | √ | √ |
+| 提交读 | x | √ | √ |
+| 可重复读 | x | x | √ |
+| 串行化 | x | x | x |
+
+
+
 
 ```plantuml
 @startmindmap
-* 数据事务的实现原理
-** innoDB引擎
-***_ redo_log(重做日志)保证事务的持久性
-***_ undo_log(回滚日志)保证事务的原子性
-***_ 锁机制、MVCC保证事务的隔离性(默认支持的隔离级别是 REPEATABLE-READ)
+* InnoDB下事务的实现原理
+**_ redo_log(重做日志)保证事务的持久性
+**_ undo_log(回滚日志)保证事务的原子性
+**_ 锁机制、MVCC保证事务的隔离性(默认支持的隔离级别是 REPEATABLE-READ)
 **_ 保证了持久性，原子性，隔离性之后一致性才能得到保障
 @endmindmap
 ```
@@ -46,8 +65,6 @@
 
 ```plantuml
 @startmindmap
-title 平衡查找树
-
 * 树
 **_ 二分搜索树 
 ***_ 特点 
@@ -56,7 +73,7 @@ title 平衡查找树
 **_ 2-3树 
 **_ AVL树 
 ***_ 左右子树高度相差不超过1 
-***_ 树高度log2 N 
+***_ 树高度logm n 
 **_ B树
 ***_ 所有节点既放key也放val
 ***_ 叶子节点独立
@@ -100,7 +117,7 @@ title 平衡查找树
 ***_ 一个表只能有一个主键，且主键不能为NULL，不能重复
 **_ 二级索引(辅助索引)
 ***_ 特点
-****_ 叶子节点 Val 存主键值。
+****_ 叶子节点 Val 存主键值，索引列值。
 ***_ 唯一索引
 ****_ 属性列数据不能重复，允许 NULL ，一张表允许创建多个唯一索引
 ****_ 建立唯一索引的目的是该属性列的唯一性，而不是为了提高效率
@@ -178,12 +195,31 @@ end
 
 
 
+
+#### 存储引擎索引区别 
+
+|  | 锁 | 事务 | 外键 | 崩溃后恢复 |MVCC(行锁升级)|
+|--|--|--|--|--|--|
+| InnoDB | 行锁(默认)、表锁 | √ | √ | √ | √ | √ |
+| MyISAM | 表锁 | x | x | x | x | x |
+
+
+
 ```plantuml
 @startmindmap
-* 存储引擎索引区别 
+title InnoDB 锁算法
 
+* 锁算法
+**_ Record lock 
+***_ 记录锁，单个行记录上的锁 
+**_ Gap lock 
+***_ 间隙锁，锁定一个范围，不包括记录本身 
+**_ Next-key lock 
+***_ record+gap 临键锁，锁定一个范围，包含记录本身 
 @endmindmap
 ```
+
+
 
 ```plantuml
 @startmindmap
@@ -241,6 +277,7 @@ title binlog 刷盘策略
 
 @endmindmap
 ```
+
 ```plantuml
 @startmindmap
 title redo_log 刷盘策略
@@ -253,15 +290,12 @@ title redo_log 刷盘策略
 ```
 
 
-```plantuml
-@startuml
-title redo log 工作流程
-start
-:mysql;
-:dml;
-:redo log buffer;
-:os buffer;
--> fsync();
-:log file;
-@enduml
-```
+<!-- @import "../image/06.png" -->
+<!-- @import "../image/07.png" -->
+<!-- @import "../image/09.png" -->
+
+
+#### 参考
+[高性能mysql第三版](C:\Users\yy\Desktop\资料\mysql\高性能mysql第三版.pdf)
+[MySQL是怎样运行的：从根儿上理解MySQL](C:\Users\yy\Desktop\资料\mysql\MySQL是怎样运行的：从根儿上理解MySQL.pdf)
+[数据库系统内幕.pdf](C:\Users\yy\Desktop\资料\mysql\数据库系统内幕.pdf)
