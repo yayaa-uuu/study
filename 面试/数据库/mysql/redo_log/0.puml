@@ -1,0 +1,35 @@
+```plantuml
+@startuml
+title innodb_flush_log_at_trx_commit = 0 
+:开启事务;
+:更新数据;
+:redo log;
+split
+:提交事务;
+kill
+split again
+->写入;
+:重做日志缓存;
+note right
+因为是1秒刷盘一次，如果宕机或MySQL挂了，
+可能会丢失1秒内的数据
+end note
+split
+->写入;
+:文件系统缓存;
+->刷盘;
+:redo log file;
+detach
+split again
+:后台线程;
+note right
+每隔1秒，就会把redo log buffer中的内容
+写到page cache中
+然后调用fsync刷盘
+end note
+
+kill
+end split 
+end split 
+@enduml
+```

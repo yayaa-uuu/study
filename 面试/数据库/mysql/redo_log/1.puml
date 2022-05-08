@@ -1,0 +1,27 @@
+```plantuml
+@startuml
+title innodb_flush_log_at_trx_commit = 1 
+:开启事务;
+:更新数据;
+:redo log;
+split
+:提交事务;
+-[#blue]->主动刷盘;
+split again
+ -[#green,dashed]-> 
+ :每秒写入;
+ -[#green,dashed]-> 
+end split
+:重做日志缓存;
+split
+->写入;
+:文件系统缓存;
+->刷盘;
+:redo log file;
+kill
+split again
+:后台线程;
+kill
+
+@enduml
+```
