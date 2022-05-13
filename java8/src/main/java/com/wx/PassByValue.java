@@ -1,7 +1,6 @@
 package com.wx;
 
 import java.util.Arrays;
-import java.util.Collection;
 
 /**
  * 值传递
@@ -9,7 +8,7 @@ import java.util.Collection;
  * @author wxli
  * @date 2021/7/23 20:47
  */
-public class Test {
+public class PassByValue {
     static int a = 1;
 
     public static void test(int a) {
@@ -26,7 +25,7 @@ public class Test {
         test(3);
         System.out.println(a);
 
-        Test test = new Test();
+        PassByValue test = new PassByValue();
         test.test2(test.b);
         System.out.println(test.b);
 
