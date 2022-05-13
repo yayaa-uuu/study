@@ -1,4 +1,4 @@
-package com.wx;
+package com.wx.reflection;
 
 import org.junit.Test;
 
