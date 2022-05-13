@@ -40,6 +40,19 @@
 @endmindmap
 ```
 
+```plantuml
+@startmindmap
+* 预写日志(WAL)
+**_ 在允许页缓存将页上的修改缓存起来的同时，保证数据库系统仍然具有持久性的语义
+**_:在那些受操作影响的缓存页被同步到磁盘上之前，将所有操作持久化到磁盘上。
+每个修改数据库状态的操作必须先写日志到磁盘上，然后才能修改相关页的内容;
+**_ 当发生崩溃时，使系统可以从操作日志中重建内存中丢失的更改。
+**_ 日志先行
+**_ 追加的形式写入日志顺序I/O
+@endmindmap
+```
+
+
 #### 各隔离级别下，并发事务问题对应
 
 |  | 脏读 | 不可重复读 | 幻读 |
@@ -226,6 +239,9 @@ title InnoDB 锁算法
 title InnoDB MVCC
 
 * MVCC
+**_ 工作原理
+***_ 使用某个时间点存在的数据快照
+
 **_ 实现原理 
 ***_ row_id 
 ****_ 行ID(唯一键)    
@@ -237,18 +253,35 @@ title InnoDB MVCC
 ```
 
 
-
-
-
 ```plantuml
-@startmindmap
-* 预写日志(WAL)
-**_ 在允许页缓存将页上的修改缓存起来的同时，保证数据库系统仍然具有持久性的语义
-**_:在那些受操作影响的缓存页被同步到磁盘上之前，将所有操作持久化到磁盘上。
-每个修改数据库状态的操作必须先写日志到磁盘上，然后才能修改相关页的内容;
-**_ 当发生崩溃时，使系统可以从操作日志中重建内存中丢失的更改。
-@endmindmap
+@startuml
+title 跨不同事务处理行的多个版本的序列图
+
+
+TransactionA -> row : a write
+participant InnoDB_engine as InnoDB_engine
+
+TransactionA -> undo_log : undo record with txn ID A 
+undo_log -> TransactionA : Rollback pointer
+TransactionA -> redo_log : redo log record
+
+loop compare transaction IDs
+InnoDB_engine <- TransactionB : records row
+InnoDB_engine -> TransactionB : apply undo records till correct txn ID
+end
+
+
+
+
+
+@enduml
 ```
+
+
+
+
+
+
 
 ```plantuml
 @startmindmap
@@ -297,5 +330,6 @@ title redo_log 刷盘策略
 
 #### 参考
 [高性能mysql第三版](C:\Users\yy\Desktop\资料\mysql\高性能mysql第三版.pdf)
+[高性能mysql第四版](C:\Users\yy\Desktop\资料\mysql\高性能mysql第三版.pdf)
 [MySQL是怎样运行的：从根儿上理解MySQL](C:\Users\yy\Desktop\资料\mysql\MySQL是怎样运行的：从根儿上理解MySQL.pdf)
 [数据库系统内幕.pdf](C:\Users\yy\Desktop\资料\mysql\数据库系统内幕.pdf)
