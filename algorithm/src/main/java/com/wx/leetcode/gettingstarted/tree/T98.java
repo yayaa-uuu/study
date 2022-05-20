@@ -4,6 +4,8 @@ import java.util.*;
 
 /**
  * https://leetcode.cn/problems/validate-binary-search-tree/
+ *
+ * 出错次数 todo  2
  */
 public class T98 {
 
@@ -43,7 +45,12 @@ public class T98 {
         //左子树取值范围(-,lo)        lo代表子树父节点值
         //右之树取值范围(up,+)
 
-        //
+        // 父节点     val   4
+        // 左子树 left  val   5       取值范围(-,4)
+        // 左子树 if (left  val  >=   parent.val)           return false
+
+        // 右子树 right val   3       取值范围(4,+)
+        // 右子树 if (right.val  <=   parent.val)           return false
         if (node.val <= lo || node.val >= up) {
             return false;
         }
