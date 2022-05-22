@@ -3,6 +3,7 @@ package com.wx.controller;
 
 import io.netty.util.concurrent.DefaultEventExecutor;
 import io.netty.util.concurrent.DefaultPromise;
+import org.springframework.stereotype.Component;
 
 /**
  * @author wxli
