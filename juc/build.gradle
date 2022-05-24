@@ -15,7 +15,7 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     implementation 'org.springframework.boot:spring-boot-starter-webflux'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation group: 'junit', name: 'junit'
+    implementation group: 'junit', name: 'junit'
     implementation 'org.apache.commons:commons-lang3'
 }
 
