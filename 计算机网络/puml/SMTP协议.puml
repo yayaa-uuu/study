@@ -1,0 +1,21 @@
+@startmindmap
+* SMTP协议 
+**_ 作用 提供电子邮件报文的传送
+
+**_ A->B发送邮箱过程
+***_:
+①A 发送报文和提供B邮箱地址
+②A的邮箱服务器与B的邮箱服务器建立TCP连接
+③初始化SMTP握手，SMTP客户通过该TCP连接发送A报文
+④B SMTP的服务器端接收该报文，放入B邮箱;
+**_:                
+                    报文格式
+https://juejin.cn/post/6844904065785135112;
+***_:
+HELO （是 HELLO 的缩写）
+MAIL FROM 
+RCPTTO
+DATA
+QUIT;
+
+@endmindmap

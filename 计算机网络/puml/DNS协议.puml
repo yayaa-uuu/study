@@ -1,0 +1,27 @@
+@startmindmap
+*_ DNS协议 
+**_ 作用 
+***_ 将域名解析为32比特的网络地址
+
+**_: 
+① 一个由分层的DNS服务器（DNSserver）实现的分布式数据库；
+② 一个使得主机能够查询分布式数据库的应用层协议。DNS 服务器通常是运行 BIND （ Berkeley Internet Name Domain）软件［BIND 2012 ］的UNIX机器。
+③DNS协议运行在UDP之上，使用53号端口;
+**_ HTTP请求发送至域名过程解析
+***_:
+① 同一台用户主机上运行着DNS应用的客户端
+② 浏览器从上述URL中抽取岀主机名(域名),并将这台主机名传给DNS应用的客户端
+③ DNS客户向DNS服务器发送一个包含主机名的请求
+④ DNS客户最终会收到一份回答报文，其中含有对应于该主机名的IP地址
+⑤ 一旦浏览器接收到来自DNS的该IP地址，它能够向位于该IP地址80端口的HTTP服务器进程发起一个TCP连接;
+**_: 
+                    报文格式
+https://juejin.cn/post/6844903582441963527;
+
+***_: 
+header首部区域
+Question 查询的问题
+Answer 应答
+Authority 授权应答
+Additional 附加信息;
+@endmindmap
