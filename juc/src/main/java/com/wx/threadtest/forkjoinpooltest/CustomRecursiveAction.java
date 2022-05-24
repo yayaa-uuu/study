@@ -1,6 +1,5 @@
 package com.wx.threadtest.forkjoinpooltest;
 
-import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +12,6 @@ import java.util.concurrent.RecursiveAction;
  * 该方法返回一个List<CustomRecursiveAction>。
  * 该列表使用invokeAll()方法提交给ForkJoinPool：
  */
-@Slf4j
 public class CustomRecursiveAction extends RecursiveAction {
 
     private String workload = "";
@@ -47,7 +45,7 @@ public class CustomRecursiveAction extends RecursiveAction {
 
     private void processing(String work) {
         String result = work.toUpperCase();
-        log.info("This result - (" + result + ") - was processed by "
+        System.out.println("This result - (" + result + ") - was processed by "
                 + Thread.currentThread().getName());
     }
 }

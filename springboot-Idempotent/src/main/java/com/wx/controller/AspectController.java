@@ -1,7 +1,5 @@
 package com.wx.controller;
 
-import com.wx.annotation.Idempotent;
-import com.wx.entity.StudyRequest;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

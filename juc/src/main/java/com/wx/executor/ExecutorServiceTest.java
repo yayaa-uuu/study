@@ -1,6 +1,8 @@
 package com.wx.executor;
 
+
 import lombok.SneakyThrows;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,7 +42,7 @@ public class ExecutorServiceTest {
      * 执行任务没有返回值
      */
     @SneakyThrows
-    @org.junit.Test
+    @Test
     public void execute() {
         executorService.execute(runnableTask);
     }
@@ -50,7 +52,7 @@ public class ExecutorServiceTest {
      * future 可以知道提交的任务是否完成，和获取任务完成之后的结果
      */
     @SneakyThrows
-    @org.junit.Test
+    @Test
     public void submit() {
         Future<String> future = executorService.submit(callableTask);
         System.out.println(future.get());
@@ -66,7 +68,7 @@ public class ExecutorServiceTest {
      * <p>
      */
     @SneakyThrows
-    @org.junit.Test
+    @Test
     public void futureTest() {
         Future<String> future = executorService.submit(callableTask);
         System.out.println(future.get());
@@ -81,7 +83,7 @@ public class ExecutorServiceTest {
      * invokeAny()将一组任务分配给ExecutorService，
      * 使每个任务都运行，并返回一个任务成功执行的结果（如果有成功执行）
      */
-    @org.junit.Test
+    @Test
     public void invokeAllTest() throws InterruptedException {
         callableTasks.add(callableTask);
         callableTasks.add(callableTask);
@@ -119,7 +121,7 @@ public class ExecutorServiceTest {
         }
     };
 
-    @org.junit.Test
+    @Test
     public void shutdownTest() {
         executorService.submit(runnable);
         //可尝试
@@ -142,7 +144,7 @@ public class ExecutorServiceTest {
      * 推荐： 关闭ExecutorService的一种好方法是将这两种方法与awaitTermination()方法结合使用：
      */
     @SneakyThrows
-    @org.junit.Test
+    @Test
     public void shutdownNowTest() {
         executorService.invokeAll(callableTasks);
         //停止接收新的任务

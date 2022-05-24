@@ -1,6 +1,5 @@
 package com.wx.aqs.semaphore;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.concurrent.ExecutorService;
@@ -49,23 +48,5 @@ public class SemaphoreTest {
     }
 
 
-    /**
-     * 当我们使用以一秒为时间段的延迟队列并且在一秒内使用所有插槽后，应该没有可用的：
-     * 但是在睡眠一段时间后，信号量应该重置并释放许可：
-     * @throws InterruptedException
-     */
-    @Test
-    public void givenDelayQueue_whenTimePass_thenSlotsAvailable() throws InterruptedException {
-        int slots = 50;
-        ExecutorService executorService = Executors.newFixedThreadPool(slots);
-        DelayQueueUsingTimedSemaphore delayQueue = new DelayQueueUsingTimedSemaphore(1, slots);
-        IntStream.range(0, slots)
-                .forEach(user -> executorService.execute(delayQueue::tryAdd));
-        executorService.shutdown();
 
-        assertEquals(0, delayQueue.availableSlots());
-        Thread.sleep(1000);
-        assertTrue(delayQueue.availableSlots() > 0);
-        assertTrue(delayQueue.tryAdd());
-    }
 }
