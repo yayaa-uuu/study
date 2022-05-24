@@ -1,0 +1,11 @@
+@startmindmap
+* Map
+**_ HashMap
+***_ LinkedHashMap
+**_ TreeMap
+**_ weakHashMap
+**_ IdentityHashMap
+**_ ConcurrentHashMap
+**_ ConcurrentSkipListMap
+
+@endmindmap

@@ -234,6 +234,7 @@ title InnoDB 锁算法
 
 
 
+
 ```plantuml
 @startmindmap
 title InnoDB MVCC
@@ -242,14 +243,43 @@ title InnoDB MVCC
 **_ 工作原理
 ***_ 使用某个时间点存在的数据快照
 
-**_ 实现原理 
-***_ row_id 
-****_ 行ID(唯一键)    
-***_ transaction_id
-****_ 事务ID
-***_ roll_pointer
-****_ 回滚指针，指向上一个旧版本
+**_ 实现原理
+***_ 隐藏字段
+****_ row_id 
+*****_ 行ID(唯一键)    
+****_ transaction_id
+*****_ 事务ID
+****_ roll_pointer
+*****_ 回滚指针，指向上一个旧版本
+***_ read view
+****_ 主要用来做可见性的判断
+***_ undo log
+****_ 当读取记录时，若记录对当前事务不可见，那么就会从历史版本链查找记录   
+
+
+
+
 @endmindmap
+```
+
+#### ReadView
+```c
+class ReadView {
+  /* ... */
+private:
+  trx_id_t m_low_limit_id;      /* 大于等于这个 ID 的事务均不可见 */
+
+  trx_id_t m_up_limit_id;       /* 小于这个 ID 的事务均可见 */
+
+  trx_id_t m_creator_trx_id;    /* 创建该 Read View 的事务ID */
+
+  trx_id_t m_low_limit_no;      /* 事务 Number, 小于该 Number 的 Undo Logs 均可以被 Purge */
+
+  ids_t m_ids;                  /* 创建 Read View 时的活跃事务列表 */
+
+  m_closed;                     /* 标记 Read View 是否 close */
+}
+
 ```
 
 
@@ -328,7 +358,17 @@ title redo_log 刷盘策略
 <!-- @import "../image/09.png" -->
 
 
+
+#### 三范式
+
+**第一范式**：不可分割的列
+
+**第二范式**：创建的列必须和这个表信息符合
+
+**第三范式**：在第二范式的基础上创建外键，主键与列之间存在直接关系
+
 #### 参考
+
 [高性能mysql第三版](C:\Users\yy\Desktop\资料\mysql\高性能mysql第三版.pdf)
 [高性能mysql第四版](C:\Users\yy\Desktop\资料\mysql\高性能mysql第三版.pdf)
 [MySQL是怎样运行的：从根儿上理解MySQL](C:\Users\yy\Desktop\资料\mysql\MySQL是怎样运行的：从根儿上理解MySQL.pdf)

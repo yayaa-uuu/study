@@ -182,7 +182,6 @@ typedef struct ziplist{
     列表节点 entryX;
     //特殊值0xFF(十进制255)，用于标记压缩列表的末端 
     uint8_t zlend; 
-
 }
 ```
 

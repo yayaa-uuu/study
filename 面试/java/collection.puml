@@ -1,0 +1,33 @@
+@startmindmap
+* Collection
+** list
+***_ CopyOnWiterList
+***_ Vector   Stack
+***_ ArrayList
+***_ linkedList
+** set
+***_ HashSet   
+****_ LinkedHashSet
+***_ SortedSet
+****_ TreeSet
+***_ EnumSet
+***_ CopyOnWiterSet
+***_ ConcurrentSkipListSet
+
+** queue
+***_ Deque
+****_ ArrayDeque
+****_ BockingDeque
+*****_ LinkedBockingDeque
+***_ BockingQueue
+****_ ArrayBockingQueue
+****_ PriorityBockingQueue
+****_ LinkedBockingQueue
+****_ TransferBockingQueue
+*****_ LinkedTransferBockingQueue
+****_ SynchronousQueue
+***_ PriorityQueue
+***_ ConcurrentLinkedQueue
+***_ DelayQueue
+@endmindmap
+
