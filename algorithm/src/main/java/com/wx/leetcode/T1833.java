@@ -1,4 +1,4 @@
-package com.wx;
+package com.wx.leetcode;
 
 import java.util.Arrays;
 

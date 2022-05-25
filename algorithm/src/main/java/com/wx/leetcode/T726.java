@@ -1,11 +1,10 @@
-package com.wx;
+package com.wx.leetcode;
 
 import java.util.Set;
 import java.util.TreeSet;
 
 /**
- * @author wxli
- * @date 2021/7/5 17:28
+ * todo
  */
 public class T726 {
     public static String countOfAtoms(String formula) {
