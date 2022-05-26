@@ -1,0 +1,8 @@
+@startmindmap
+* io 模型
+**_ 阻塞io模型
+**_ 非阻塞io模型
+**_ 多路复用io模型
+**_ 信号驱动io模型
+**_ 异步io模型
+@endmindmap
