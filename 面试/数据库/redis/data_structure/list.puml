@@ -1,0 +1,21 @@
+@startmindmap
+* list
+**_ encoding
+***_ ziplist
+***_ linkedlist
+
+**_ 常用命令
+***_ llen
+***_ lpop
+***_ lpush
+***_ lrange
+***_ lrem
+***_ lmovev
+***_ lmpop
+***_ rpush
+***_ rpop
+***_ lindex
+***_ linset
+***_ ltrim
+***_ lset
+@endmindmap

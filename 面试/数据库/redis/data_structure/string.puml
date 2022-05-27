@@ -1,0 +1,32 @@
+@startmindmap
+* string
+**_ encoding
+***_ int
+
+***_ embter
+***_ raw
+
+
+**_ 常用命令
+***_ set 
+***_ get  
+***_ incr
+***_ incrby
+***_ incrbyfloat
+***_ decr
+***_ decrby
+***_ strlen  
+***_ append  
+***_ setrange  
+***_ getrange  
+
+**_ bitmap
+***_ setbit
+***_ getbit
+***_ bitpos
+***_ bitcount
+***_ bitop
+***_ 场景
+****_ 有用户系统，统计用户登录天数，且窗口随机
+****_ 京东618，登录送礼物。假设京东2E用户。
+@endmindmap

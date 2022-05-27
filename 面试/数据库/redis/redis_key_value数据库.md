@@ -1,88 +1,66 @@
-type key
-
-object encoding key
-
-```plantuml
-@startmindmap
-* string
-**_ 字符串操作
-***_ set 
-***_ get  
-***_ strlen  
-***_ append  
-***_ setrange  
-***_ getrange  
-**_ 数字操作
-***_ incr
-**_ 位图
-***_ setbit
-***_ getbit
-***_ bitpos
-***_ bitcount
-***_ bitop
-***_ 场景
-****_ 有用户系统，统计用户登录天数，且窗口随机
-****_ 京东618，登录送礼物。假设京东2E用户。
-@endmindmap
+```c
+typedef struct redisObject{
+    类型
+    type          
+    编码
+    encoding      
+    void *ptr       //指向底层实现数据结构的指针  
+}
 ```
 
-```plantuml
-@startmindmap
-* list
-**_ 数组
-***_ lindex
-**_ 栈
-**_ 队列
-**_ 阻塞队列，单播
-**_ llen
-**_ lpop
-**_ lpush
-**_ lrange
-**_ lrem
-**_ lmove
-**_ lmpop
-@endmindmap
-```
+<!-- @import "./data_structure/string.puml" -->
 
-```plantuml
-@startmindmap
-* hash
-**_ map(K,V)
-**_ 场景
-**_ 点赞
-**_ 收藏
-**_ 详情页
-@endmindmap
-```
 
-```plantuml
-@startmindmap
-* set
-**_ 无序，随机性，不重复
-**_ sadd
-**_ smembers
-**_ srem
-**_ sinter
-**_ sinterstore
-**_ sunion
-**_ sunionstore
-**_ sdiff
-**_ srandmember
-***_ 随机事件
-****_ 正数：取出一个去重的结果集(不能超过已有集)
-****_ 负数：取出一个带重复的结果集，一定满足你要的数量
-****_ 0：不返回
-**_ spop
-***_ 取出一个
-**_ 抽奖
-@endmindmap
-```
+#### list
 
-```plantuml
-@startmindmap
-* sortedset
-@endmindmap
-```
+<!-- @import "./data_structure/list.puml" -->
+
+<!-- @import "./image/list_1.png" -->
+
+<!-- @import "./image/list_2.png" -->
+
+<!-- @import "./image/list_3.png" -->
+
+
+当列表对象可以同时满足以下两个条件时，列表对象使用ziplist编码，否则使用linkedlist
+1. 列表对象保存的所有字符串元素的长度都小于64字节
+2. 列表对象保存的元素数量小于512 个。
+
+#### hash
+
+<!-- @import "./data_structure/hash.puml" -->
+
+<!-- @import "./image/hash_1.png" -->
+
+<!-- @import "./image/hash_2.png" -->
+
+当哈希对象同时满足以下两个条件时;哈希对象使用 ziplist 编码
+1. 哈希对象保存的所有键值对的键和值的字符串的长度都小于64字节
+2. 哈希对象保存的键值对数量小于512 个。
+
+#### set
+
+<!-- @import "./data_structure/set.puml" -->
+
+<!-- @import "./image/set_1.png" -->
+
+<!-- @import "./image/set_2.png" -->
+当集合对象可以同时满足以下两个条件时，使用intset，否者使用ht
+1. 集合对象保存的所有元素都是整数值;
+2. 集合对象保存的元素数量不超过512个。
+
+#### zset
+
+<!-- @import "./data_structure/zset.puml" -->
+
+
+<!-- @import "./image/zset_1.png" -->
+<!-- @import "./image/zset_2.png" -->
+
+当有序集合对象同时满足以下两个条件，使用ziplist
+1. 有序集合保存的元素数量小于128个;
+2. 有序集合保存的所有元素成员的长度都小于64字节。
+
 
 #### 参考
 

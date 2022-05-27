@@ -1,0 +1,19 @@
+@startmindmap
+* hash
+**_ encoding
+***_ ziplist
+***_ ht
+**_ 常用命令
+
+***_ hset
+***_ hget
+***_ hexists
+***_ hdel
+***_ hlen
+***_ hgetall
+
+**_ 场景
+**_ 点赞
+**_ 收藏
+**_ 详情页
+@endmindmap

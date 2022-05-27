@@ -1,0 +1,22 @@
+@startmindmap
+* set
+**_ encoding
+***_ intset
+***_ ht
+**_ sadd
+**_ smembers
+**_ srem
+**_ sinter
+**_ sinterstore
+**_ sunion
+**_ sunionstore
+**_ sdiff
+**_ srandmember
+***_ 随机事件
+****_ 正数：取出一个去重的结果集(不能超过已有集)
+****_ 负数：取出一个带重复的结果集，一定满足你要的数量
+****_ 0：不返回
+**_ spop
+***_ 取出一个
+**_ 抽奖
+@endmindmap

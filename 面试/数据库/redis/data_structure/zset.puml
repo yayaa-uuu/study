@@ -1,0 +1,30 @@
+@startmindmap
+* sortedset
+**_ encoding
+***_ ziplist
+***_ skiplist
+**_ 常用命令
+***_ zadd
+***_ zscore
+***_ zincrby
+***_ zcard
+***_ zcount
+***_ zrange
+***_ zrevrange
+***_ zrangebyscore
+***_ zrevrangebyscore
+***_ zrank
+***_ zrevrank
+***_ zrem
+***_ zremrangebyrank
+***_ zremrangebyscore
+***_ zrangebylex
+***_ zlexcount
+***_ zremrangebylex
+***_ zscan
+***_ zunionstore
+***_ zinterstore
+
+
+
+@endmindmap
