@@ -1,10 +1,16 @@
 ```c
 typedef struct redisObject{
-    类型
-    type          
-    编码
-    encoding      
-    void *ptr       //指向底层实现数据结构的指针  
+    //类型
+    unsigned type:4;
+    //编码
+    unsigned encoding:4;
+    //指向底层实现数据结构的指针
+    void *ptr;
+    // ... 
+    //引用计数，用于内存回收，引用回收算法
+    int refcount;
+    //记录对象最后一次被命令程序访问的时间
+    unsigned lru:22;
 }
 ```
 

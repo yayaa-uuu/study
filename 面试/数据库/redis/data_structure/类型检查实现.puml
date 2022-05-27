@@ -1,0 +1,15 @@
+@startuml
+start
+: 客户端发送llen<key>命令 ;
+if (服务器检查键key的值对象\n是否是列表对象?) then (是)
+    :对键执行llen命令;
+    if (对象的编码类型是ziplist\n还是linkedlist?) then (ziplist)
+        :调用ziplistLen函数返回\n压缩列表的长度;
+    else (linkedlist)
+        :调用listLength函数返回\n双端链表的长度;
+    endif
+else (否)
+    :返回一个类型错误;
+endif
+end
+@enduml
