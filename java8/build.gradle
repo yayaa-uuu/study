@@ -6,6 +6,9 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     implementation group: 'junit', name: 'junit'
     implementation 'cglib:cglib:3.3.0'
+    implementation 'io.projectreactor:reactor-core'
+    implementation 'io.projectreactor:reactor-test'
+
 
 }
 test {

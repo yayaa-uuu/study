@@ -5,6 +5,7 @@ dependencies {
     implementation group: 'junit', name: 'junit'
     implementation 'org.projectlombok:lombok:1.18.24'
     implementation 'io.netty:netty-all:4.1.77.Final'
+    implementation 'in.jlibs:jlibs-xsd:2.1'
 }
 
 test {

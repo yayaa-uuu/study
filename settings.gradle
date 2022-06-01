@@ -22,3 +22,5 @@ include 'java8'
 include 'algorithm'
 include 'jvm'
 include 'spring'
+
+include 'springcloud'
