@@ -1,6 +1,6 @@
-package com.wx.slidingwindow;
+package com.wx.leetcode.slidingwindow;
 
-public class SlidingWindowTest {
+public class HWT44 {
     /**
      * 1、有N个正整数组成的一个序列。给定整数sum，求长度最长的连续子序列，使他们的和等于sum，返回此子序列的长度，如果没有满足要求的序列，返回-1。
      * <p>

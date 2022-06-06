@@ -1,4 +1,4 @@
-package com.wx.leetcode;
+package com.wx.leetcode.interview;
 
 /**
  * https://leetcode.cn/problems/find-closest-lcci/

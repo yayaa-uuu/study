@@ -1,4 +1,4 @@
-package com.wx.leetcode;
+package com.wx.leetcode.interview;
 
 import java.util.ArrayList;
 import java.util.List;
