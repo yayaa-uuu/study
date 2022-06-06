@@ -1,12 +1,13 @@
-package com.wx.leetcode;
+package com.wx.leetcode.slidingwindow;
 
 import java.util.HashSet;
 import java.util.Set;
 
+
 public class T3 {
     public static int lengthOfLongestSubstring(String s) {
         // 哈希集合，记录每个字符是否出现过
-        Set<Character> occ = new HashSet<Character>();
+        Set<Character> occ = new HashSet<>();
         int n = s.length();
         // 右指针，初始值为 -1，相当于我们在字符串的左边界的左侧，还没有开始移动
         int rk = -1, ans = 0;
@@ -25,6 +26,30 @@ public class T3 {
         }
         return ans;
     }
+
+    public static int lengthOfLongestSubstring_2(String s) {
+        int left = 0;
+        int right = 0;
+        int maxLen = 0;
+        Set<Character> set = new HashSet<>();
+        while (true) {
+            int n = s.length();
+            if (!(left < n)) break;
+            //左指针不断向右移动，每移动一次，即删除前面一个字符
+            if (left != 0) {
+                set.remove(s.charAt(left - 1));
+            }
+            //右指针一直向右移动
+            while (right < n && !set.contains(s.charAt(right))) {
+                set.add(s.charAt(right));
+                right++;
+            }
+            maxLen = Math.max(maxLen, right - left);
+            left++;
+        }
+        return maxLen;
+    }
+
 
     public static void main(String[] args) {
         lengthOfLongestSubstring("abcabcbb");
