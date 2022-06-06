@@ -1,0 +1,12 @@
+@startuml
+title 客户端经历TCP状态变化
+[*] --> closed
+
+closed --> syn_sent : 发送syn
+syn_sent --> established : 接收SYN+ACK，发送ACK
+established -left-> fin_wait_1 : 发送FIN\n客户端应用发起关闭连接
+fin_wait_1 -up-> fin_wait_2 : 接收ACK，不发送
+fin_wait_2 -up-> time_wait : 接收FIN，发送ACK
+time_wait -up-> closed : 等待30s
+
+@enduml

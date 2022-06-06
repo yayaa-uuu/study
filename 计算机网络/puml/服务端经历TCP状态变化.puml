@@ -1,0 +1,12 @@
+@startuml
+title 服务端经历TCP状态变化
+[*] --> closed
+
+closed --> listen : 监听一个套接字
+listen --> syn_rcvd : 接收SYN\n并发送SYN+ACK
+syn_rcvd -left-> established : 接收ACK，不发送
+established -up-> close_wait : 接收FIN，发送ACK
+close_wait -up-> last_ack : 发送FIN
+last_ack -up-> closed : 接收ACK，不发送
+
+@enduml
