@@ -1,5 +1,10 @@
 package com.wx.leetcode;
 
+import java.util.Arrays;
+
+/**
+ * https://leetcode.cn/problems/merge-sorted-array/
+ */
 public class T88 {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         //定义双指针
@@ -21,5 +26,13 @@ public class T88 {
         for (int i = 0; i < m + n; i++) {
             nums1[i] = sorted[i];
         }
+    }
+
+    //合并后排序
+    public void merge_2(int[] nums1, int m, int[] nums2, int n) {
+        for (int i = 0; i < n; i++) {
+            nums1[m + i] = nums2[i];
+        }
+        Arrays.sort(nums1);
     }
 }

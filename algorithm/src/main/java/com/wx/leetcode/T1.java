@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/x2jrse/
  */
-public class T2 {
+public class T1 {
     public int[] twoSum(int[] nums, int target) {
         for (int i = 0; i < nums.length - 1; i++) {
             int temp = nums[i];
