@@ -13,21 +13,28 @@ public class Main {
     public static void main(String[] args) throws IOException {
 //        ConvertPDFtoWord();
 //        ConvertPDFtoWordDocAdvanced();
-        ConvertPDFtoHTML_SplittingOutput();
+//        ConvertPDFtoHTML_SplittingOutput();
+        ConvertWordToFDF();
     }
 
     public static void ConvertPDFtoWord() {
         // Open the source PDF document
-        String _dataDir="C:\\Users\\yy\\Desktop\\资料/mysql/";
+        String _dataDir = "C:\\Users\\yy\\Desktop\\资料/mysql/";
         Document pdfDocument = new Document(_dataDir + "OReilly.High.Performance.MySQL.4th.Edition.2021.11.pdf");
         // Save the file into MS document format
         pdfDocument.save(_dataDir + "高性能mysql第四版.html", SaveFormat.Html);
     }
 
-    public static void ConvertPDFtoWordDocAdvanced()
-    {
-        String _dataDir="C:\\Users\\yy\\Desktop\\资料/mysql/";
-        Path pdfFile = Paths.get(_dataDir.toString(), "OReilly.High.Performance.MySQL.4th.Edition.2021.11.pdf");
+    public static void ConvertWordToFDF() {
+        // Open the source PDF document
+        String _dataDir = "C:\\Users\\y'y\\Desktop\\资料\\go\\";
+        Document pdfDocument = new Document(_dataDir + "PDF-to-DOC.doc");
+        pdfDocument.save(_dataDir + "out.pdf", SaveFormat.Pdf);
+    }
+
+    public static void ConvertPDFtoWordDocAdvanced() {
+        String _dataDir = "C:\\Users\\y'y\\Desktop\\资料\\go\\";
+        Path pdfFile = Paths.get(_dataDir.toString(), "Go.pdf");
         Path docFile = Paths.get(_dataDir.toString(), "PDF-to-DOC.doc");
         Document pdfDocument = new Document(pdfFile.toString());
         DocSaveOptions saveOptions = new DocSaveOptions();
@@ -47,7 +54,7 @@ public class Main {
     }
 
     public static void ConvertPDFtoHTML_SplittingOutput() {
-        String _dataDir="C:\\Users\\yy\\Desktop\\资料/mysql/";
+        String _dataDir = "C:\\Users\\yy\\Desktop\\资料/mysql/";
         // Open the source PDF document
         Document pdfDocument = new Document(_dataDir + "OReilly.High.Performance.MySQL.4th.Edition.2021.11.pdf");
 
