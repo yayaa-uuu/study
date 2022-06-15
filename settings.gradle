@@ -7,7 +7,7 @@ pluginManagement {
 rootProject.name = 'study'
 include 'platform'
 include 'design-patterns'
-include 'springboot-data'
+include 'springboot-tx'
 include 'springboot-webflux'
 include 'springboot-web'
 include 'springboot-translation'
