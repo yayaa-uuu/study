@@ -18,7 +18,7 @@ public class PDFCompile {
     }
  
     public static void compile() throws Exception{
-        ClassPool.getDefault().insertClassPath("C:\\Users\\yy\\.gradle\\caches\\modules-2\\files-2.1\\com.aspose\\aspose-pdf\\20.12\\abc5a29785557e24b62ec04aa4ee535d12610069\\aspose-pdf-20.12-jdk17.jar");
+        ClassPool.getDefault().insertClassPath("C:\\Users\\y'y\\.gradle\\caches\\modules-2\\files-2.1\\com.aspose\\aspose-pdf\\20.12\\abc5a29785557e24b62ec04aa4ee535d12610069\\aspose-pdf-20.12-jdk17.jar");
         CtClass ctClass = ClassPool.getDefault().getCtClass("com.aspose.pdf.ADocument");
  
         CtMethod[] declaredMethods = ctClass.getDeclaredMethods();
@@ -42,6 +42,6 @@ public class PDFCompile {
                 method.setBody("{return true;}");
             }
         }
-        ctClass.writeFile("C:\\Users\\yy\\.gradle\\caches\\modules-2\\files-2.1\\com.aspose\\aspose-pdf\\20.12\\abc5a29785557e24b62ec04aa4ee535d12610069\\");
+        ctClass.writeFile("C:\\Users\\y'y\\.gradle\\caches\\modules-2\\files-2.1\\com.aspose\\aspose-pdf\\20.12\\abc5a29785557e24b62ec04aa4ee535d12610069\\");
     }
 }

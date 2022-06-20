@@ -13,8 +13,8 @@ public class Main {
     public static void main(String[] args) throws IOException {
 //        ConvertPDFtoWord();
 //        ConvertPDFtoWordDocAdvanced();
-//        ConvertPDFtoHTML_SplittingOutput();
-        ConvertWordToFDF();
+        ConvertPDFtoHTML_SplittingOutput();
+//        ConvertWordToFDF();
     }
 
     public static void ConvertPDFtoWord() {
@@ -54,7 +54,7 @@ public class Main {
     }
 
     public static void ConvertPDFtoHTML_SplittingOutput() {
-        String _dataDir = "C:\\Users\\yy\\Desktop\\资料/mysql/";
+        String _dataDir = "C:\\Users\\y'y\\Desktop\\资料\\mysql\\";
         // Open the source PDF document
         Document pdfDocument = new Document(_dataDir + "OReilly.High.Performance.MySQL.4th.Edition.2021.11.pdf");
 
@@ -63,6 +63,7 @@ public class Main {
 
         // Specify to split the output into multiple pages
         htmlOptions.setSplitIntoPages(true);
+
 
         // Save the document
         pdfDocument.save(_dataDir + "MultiPageHTML_out.html", htmlOptions);

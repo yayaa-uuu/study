@@ -18,7 +18,7 @@ public class PDFCompile_2111 {
     }
  
     public static void compile() throws Exception{
-        ClassPool.getDefault().insertClassPath("C:\\Users\\yy\\.gradle\\caches\\modules-2\\files-2.1\\com.aspose\\aspose-pdf\\21.11\\1132dd13c642ed16f0d325c84b474e21a5718e06\\aspose-pdf-21.11.jar");
+        ClassPool.getDefault().insertClassPath("C:\\Users\\y'y\\.gradle\\caches\\modules-2\\files-2.1\\com.aspose\\aspose-pdf\\21.11\\1132dd13c642ed16f0d325c84b474e21a5718e06\\aspose-pdf-21.11.jar");
         //获取指定的class文件对象
         CtClass zzZJJClass = ClassPool.getDefault().getCtClass("com.aspose.pdf.l9f");
         //从class对象中解析获取所有方法
@@ -34,7 +34,7 @@ public class PDFCompile_2111 {
             }
         }
         //这一步就是将破译完的代码放在桌面上
-        zzZJJClass.writeFile("C:\\Users\\yy\\.gradle\\caches\\modules-2\\files-2.1\\com.aspose\\aspose-pdf\\21.11\\1132dd13c642ed16f0d325c84b474e21a5718e06\\");
+        zzZJJClass.writeFile("C:\\Users\\y'y\\.gradle\\caches\\modules-2\\files-2.1\\com.aspose\\aspose-pdf\\21.11\\1132dd13c642ed16f0d325c84b474e21a5718e06\\");
 
 
 //        ctClass.writeFile("C:\\Users\\yy\\.gradle\\caches\\modules-2\\files-2.1\\com.aspose\\aspose-pdf\\21.11\\1132dd13c642ed16f0d325c84b474e21a5718e06\\");

@@ -1,3 +1,5 @@
+<!-- @import "./puml/val数据结构和底层数据结构对应关系.puml" -->
+
 #### 简单动态字符串
 ```c
 typedef struct sdshdr{
@@ -10,6 +12,7 @@ typedef struct sdshdr{
     char buf[];
 }sdshdr;
 ```
+<!-- @import "./puml/sds.puml" -->
 
 
 #### 链表
@@ -223,6 +226,7 @@ typedef struct redisObject{
     unsigned lru:22;
 }robj;
 ```
+
 
 
 #### 参考

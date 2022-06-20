@@ -3,10 +3,13 @@ package com.wx.leetcode;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * https://leetcode.cn/problems/roman-to-integer/
+ */
 public class T13 {
     public int romanToInt(String s) {
         int sum = 0;
-        Map<String, Integer> map = new HashMap<String, Integer>(8);
+        Map<String, Integer> map = new HashMap<>(8);
         map.put("I", 1);
         map.put("V", 5);
         map.put("X", 10);
