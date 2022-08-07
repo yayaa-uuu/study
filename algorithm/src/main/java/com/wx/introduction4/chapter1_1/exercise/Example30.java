@@ -1,4 +1,4 @@
-package com.wx.chapter1_1.exercise;
+package com.wx.introduction4.chapter1_1.exercise;
 
 import java.util.Arrays;
 

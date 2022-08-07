@@ -1,4 +1,4 @@
-package com.wx.chapter1_1.exercise;
+package com.wx.introduction4.chapter1_1.exercise;
 
 public class Example20 {
     public static int factorial(int n) {

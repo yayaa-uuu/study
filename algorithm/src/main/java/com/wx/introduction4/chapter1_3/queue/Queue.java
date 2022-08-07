@@ -1,4 +1,4 @@
-package com.wx.chapter1_3.queue;
+package com.wx.introduction4.chapter1_3.queue;
 
 import java.util.Iterator;
 import java.util.ListIterator;

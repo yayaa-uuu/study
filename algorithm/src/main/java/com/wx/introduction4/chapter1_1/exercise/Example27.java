@@ -1,4 +1,4 @@
-package com.wx.chapter1_1.exercise;
+package com.wx.introduction4.chapter1_1.exercise;
 
 public class Example27 {
     public static double binomial(int N, int k, double p) {

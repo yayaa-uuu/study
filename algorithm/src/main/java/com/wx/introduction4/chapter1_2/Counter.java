@@ -1,4 +1,4 @@
-package com.wx.chapter1_2;
+package com.wx.introduction4.chapter1_2;
 
 public class Counter {
     private final String id;

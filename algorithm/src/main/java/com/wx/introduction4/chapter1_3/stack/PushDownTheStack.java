@@ -1,4 +1,4 @@
-package com.wx.chapter1_3.stack;
+package com.wx.introduction4.chapter1_3.stack;
 
 /**
  * 下压堆栈（链表实现）

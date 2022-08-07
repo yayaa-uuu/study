@@ -1,6 +1,6 @@
 package com.wx.search;
 
-import com.wx.chapter1_3.graph.Graph;
+import com.wx.introduction4.chapter1_3.graph.Graph;
 
 import java.util.Stack;
 
