@@ -1,7 +1,7 @@
 package com.wx.search;
 
-import com.wx.datastructure.graph.Graph;
-import com.wx.datastructure.queue.Queue;
+import com.wx.chapter1_3.graph.Graph;
+import com.wx.chapter1_3.queue.Queue;
 
 import java.util.Stack;
 

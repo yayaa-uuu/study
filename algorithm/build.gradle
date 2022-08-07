@@ -1,18 +1,6 @@
-configurations {
-    compile.exclude module: 'spring-boot-starter-logging'
-}
 dependencies {
-    implementation 'org.projectlombok:lombok:1.18.18'
-    implementation 'com.lmax:disruptor'
-    implementation 'org.apache.skywalking:apm-toolkit-log4j-2.x'
-    implementation 'org.springframework.boot:spring-boot-starter-log4j2'
     compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    implementation group: 'junit', name: 'junit'
-    implementation 'org.apache.commons:commons-lang3'
-}
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'junit:junit'
 
-test {
-    useJUnitPlatform()
 }

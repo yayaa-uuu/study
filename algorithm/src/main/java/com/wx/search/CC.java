@@ -1,6 +1,6 @@
 package com.wx.search;
 
-import com.wx.datastructure.graph.Graph;
+import com.wx.chapter1_3.graph.Graph;
 
 /**
  * @author wxli
