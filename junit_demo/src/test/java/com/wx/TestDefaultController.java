@@ -57,11 +57,6 @@ public class TestDefaultController {
     }
 
     @Test
-    public void testMethod() {
-        throw new RuntimeException("implements me");
-    }
-
-    @Test
     public void testAddHandler() {
         Request request = new SampleRequest();
         RequestHandler handler = new SampleRequestHandler();
@@ -99,8 +94,10 @@ public class TestDefaultController {
 
     @Test(expected = RuntimeException.class)
     public void testAddRequestDuplicateName() {
-        SampleRequest sampleRequest = new SampleRequest();
+        Request request = new SampleRequest();
+        Request sampleRequest = new SampleRequest();
         SampleHandler sampleHandler = new SampleHandler();
+        controller.addHandler(request, sampleHandler);
         controller.addHandler(sampleRequest, sampleHandler);
     }
 
@@ -114,6 +111,11 @@ public class TestDefaultController {
             controller.addHandler(request, handler);
             response = controller.processRequest(request);
             Assert.assertNotNull(response);
+            try {
+                Thread.sleep(10);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
             Assert.assertEquals("Response should be of type ErrorResponse", ErrorResponse.class, response.getClass());
         }
     }
