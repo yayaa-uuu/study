@@ -1,6 +1,7 @@
-package com.wx.testcase;
+package com.wx.chapter2.testcase;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 public class TestCaseB {
     @Test

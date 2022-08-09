@@ -1,14 +1,14 @@
 package com.wx;
 
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class TestDefaultController {
     private DefaultController controller;
 
 
-    @Before
+    @BeforeEach
     public void instantiate() throws Exception {
         controller = new DefaultController();
     }
@@ -62,8 +62,8 @@ public class TestDefaultController {
         RequestHandler handler = new SampleRequestHandler();
         controller.addHandler(request, handler);
         RequestHandler handler2 = controller.getHandler(request);
-        Assert.assertSame("Handler we set in controller should be the" +
-                "same handler we get ", handler2, handler);
+        Assertions.assertSame(handler2, handler, "Handler we set in controller should be the" +
+                "same handler we get ");
     }
 
     @Test
@@ -72,8 +72,8 @@ public class TestDefaultController {
         RequestHandler handler = new SampleRequestHandler();
         controller.addHandler(request, handler);
         Response response = controller.processRequest(request);
-        Assert.assertNotNull("must not return a null response", response);
-        Assert.assertEquals("Response should be of type SampleResponse", SampleResponse.class, response.getClass());
+        Assertions.assertNotNull(response, "must not return a null response");
+        Assertions.assertEquals(SampleResponse.class, response.getClass(), "Response should be of type SampleResponse");
     }
 
     @Test
@@ -82,17 +82,19 @@ public class TestDefaultController {
         RequestHandler exceptionHandler = new SampleExceptionHandler();
         controller.addHandler(request, exceptionHandler);
         Response response = controller.processRequest(request);
-        Assert.assertNotNull("must not return a null response", response);
-        Assert.assertEquals("Response should be of type ErrorResponse", ErrorResponse.class, response.getClass());
+        Assertions.assertNotNull(response, "must not return a null response");
+        Assertions.assertEquals(ErrorResponse.class, response.getClass(), "Response should be of type ErrorResponse");
     }
 
-    @Test(expected = RuntimeException.class)
+    //todo
+    @Test
     public void testGetHandlerNotDefined() {
         SampleRequest sampleRequest = new SampleRequest("testNotDefined");
         controller.getHandler(sampleRequest);
     }
 
-    @Test(expected = RuntimeException.class)
+    //todo
+    @Test
     public void testAddRequestDuplicateName() {
         Request request = new SampleRequest();
         Request sampleRequest = new SampleRequest();
@@ -101,7 +103,8 @@ public class TestDefaultController {
         controller.addHandler(sampleRequest, sampleHandler);
     }
 
-    @Test(timeout = 1)
+    //todo
+    @Test
     public void testProcessMultipleRequestsTimeOut() {
         Request request;
         Response response;
@@ -110,13 +113,13 @@ public class TestDefaultController {
             request = new SampleRequest(String.valueOf(i));
             controller.addHandler(request, handler);
             response = controller.processRequest(request);
-            Assert.assertNotNull(response);
+            Assertions.assertNotNull(response);
             try {
                 Thread.sleep(10);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            Assert.assertEquals("Response should be of type ErrorResponse", ErrorResponse.class, response.getClass());
+            Assertions.assertEquals(ErrorResponse.class, response.getClass(), "Response should be of type ErrorResponse");
         }
     }
 }
