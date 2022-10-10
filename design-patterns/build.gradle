@@ -1,11 +1,5 @@
-configurations {
 
-}
 dependencies {
-    implementation 'org.projectlombok:lombok:1.18.18'
 
 }
 
-test {
-    useJUnitPlatform()
-}

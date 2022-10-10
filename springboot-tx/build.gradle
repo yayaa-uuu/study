@@ -1,22 +1,4 @@
-configurations {
-
-}
 dependencies {
-    implementation 'org.projectlombok:lombok:1.18.24'
-    implementation 'org.apache.commons:commons-pool2'
-    runtimeOnly 'mysql:mysql-connector-java'
-    implementation 'com.baomidou:mybatis-plus-boot-starter'
-    implementation 'com.lmax:disruptor'
-    implementation 'org.apache.skywalking:apm-toolkit-log4j-2.x'
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation group: 'junit', name: 'junit'
 }
 
-test {
-    useJUnitPlatform()
-}
 
-repositories {
-    mavenCentral()
-}

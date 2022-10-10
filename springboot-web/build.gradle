@@ -1,21 +1,5 @@
-configurations {
-    compile.exclude module: 'spring-boot-starter-logging'
-}
 dependencies {
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
-
-    implementation 'com.lmax:disruptor'
-    implementation 'org.springframework.boot:spring-boot-starter-log4j2'
-
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-starter-aop'
-
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation group: 'junit', name: 'junit'
-
 }
 
-test {
-    useJUnitPlatform()
-}

@@ -1,24 +1,4 @@
-configurations {
-    compile.exclude module: 'spring-boot-starter-logging'
-}
 dependencies {
-    implementation 'org.projectlombok:lombok:1.18.18'
-    compile fileTree(dir: "libs", include: ["*.jar"])
-    implementation 'org.apache.commons:commons-pool2'
-    runtimeOnly 'mysql:mysql-connector-java'
-    api 'com.baomidou:mybatis-plus-boot-starter'
-    implementation 'com.lmax:disruptor'
-    implementation 'org.apache.skywalking:apm-toolkit-log4j-2.x'
-    implementation 'org.springframework.boot:spring-boot-starter-log4j2'
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation group: 'junit', name: 'junit'
-    implementation 'org.apache.commons:commons-lang3'
-    implementation 'com.alibaba:fastjson:1.2.76'
+
 }
 
-test {
-    useJUnitPlatform()
-}

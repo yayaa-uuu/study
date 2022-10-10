@@ -1,16 +1,9 @@
 plugins {
-    id 'org.springframework.boot' version '2.6.2'
-    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
-    id 'java-library'
+    id 'io.spring.dependency-management' version '1.0.12.RELEASE'
+    id 'org.springframework.boot' version '3.0.0-SNAPSHOT'
 }
 
-repositories {
-    maven { url 'https://maven.aliyun.com/repository/public/' }
-    maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local/' }
-    mavenCentral()
-}
-
-configure(subprojects.findAll {it.name != 'platform'}) {
+configure(subprojects.findAll { it.name != 'platform' }) {
     apply plugin: 'java-library'
     apply plugin: 'idea'
     apply plugin: 'io.spring.dependency-management'
@@ -21,17 +14,20 @@ configure(subprojects.findAll {it.name != 'platform'}) {
 
     java {
         toolchain {
-            sourceCompatibility = JavaVersion.VERSION_1_8
-            targetCompatibility = JavaVersion.VERSION_1_8
+            sourceCompatibility = JavaVersion.VERSION_17
+            targetCompatibility = JavaVersion.VERSION_17
         }
     }
 
     repositories {
+        maven { url 'https://repo.spring.io/milestone' }
+        maven { url 'https://repo.spring.io/snapshot' }
         maven { url 'https://maven.aliyun.com/repository/public/' }
-        maven { url 'http://repository.aspose.com/repo/' }
-        maven { url 'http://repository.springsource.com/maven/bundles/external' }
+        maven { url 'https://repository.aspose.com/repo/' }
+        maven { url 'https://repository.springsource.com/maven/bundles/external' }
         mavenCentral()
     }
+
 
     configurations {
         compileOnly {
@@ -42,17 +38,9 @@ configure(subprojects.findAll {it.name != 'platform'}) {
     dependencies {
         implementation platform(project(':platform'))
     }
-
-    dependencyManagement {
-        imports {
-            mavenBom "com.alibaba.cloud:spring-cloud-alibaba-dependencies:2021.1"
-            mavenBom "org.springframework.cloud:spring-cloud-dependencies:2020.0.2"
+    test {
+        useJUnitPlatform{
+            includeTags ''
         }
     }
-
-    test {
-        useJUnitPlatform()
-    }
-
 }
-

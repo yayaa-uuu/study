@@ -1,16 +1,6 @@
-configurations {
-    compile.exclude module: 'spring-boot-starter-logging'
-}
 dependencies {
     compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
-    implementation group: 'junit', name: 'junit'
-    implementation 'cglib:cglib:3.3.0'
-    implementation 'io.projectreactor:reactor-core'
-    implementation 'io.projectreactor:reactor-test'
+    testImplementation 'junit:junit'
+    testImplementation 'org.junit.jupiter:junit-jupiter'
 
-
-}
-test {
-    useJUnitPlatform()
 }
