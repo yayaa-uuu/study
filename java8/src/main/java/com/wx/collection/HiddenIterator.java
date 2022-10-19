@@ -18,15 +18,4 @@ public class HiddenIterator {
             System.out.println("debug : added ten elements to "+ set);      //
         }
     }
-
-    public static void main(String[] args) {
-        HiddenIterator hiddenIterator = new HiddenIterator();
-        new Thread(()->{
-            hiddenIterator.addTenThings();
-        }).start();
-        new Thread(()->{
-            hiddenIterator.addTenThings();
-        }).start();
-    }
-
 }

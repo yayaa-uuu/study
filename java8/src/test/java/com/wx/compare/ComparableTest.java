@@ -1,11 +1,16 @@
 package com.wx.compare;
 
+import org.junit.jupiter.api.Test;
+
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-public class ComparableTest {
-    public static void main(String[] args) {
+import static org.junit.jupiter.api.Assertions.*;
+
+class ComparableTest {
+    @Test
+    public void testCompare(){
         System.out.println(Integer.compare(1, 1));
         System.out.println(Integer.compare(1, 2));
         List<Integer> list = new LinkedList<>();
@@ -15,4 +20,5 @@ public class ComparableTest {
         Collections.sort(list);
         System.out.println(list);
     }
+
 }

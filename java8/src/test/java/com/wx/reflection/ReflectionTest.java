@@ -1,18 +1,13 @@
 package com.wx.reflection;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
-/**
- * @author wxli
- * @date 2021/7/12 18:00
- */
-public class ReflectionTest {
-
+class ReflectionTest {
     /**
      * 获取类上的注解
      */
@@ -59,6 +54,5 @@ public class ReflectionTest {
         Annotation[] annotations = parent.getClass().getAnnotations();
         Arrays.stream(annotations).forEach(System.out::println);
     }
-
 
 }
