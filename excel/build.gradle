@@ -1,0 +1,7 @@
+dependencies {
+    compileOnly 'org.projectlombok:lombok'
+    implementation 'org.apache.poi:poi-ooxml'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+}

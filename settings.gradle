@@ -12,6 +12,8 @@ include 'algorithm'
 include 'junit_demo'
 include 'priority'
 include 'java8'
+include 'excel'
+
 
 //include 'design-patterns'
 //include 'springboot-tx'
