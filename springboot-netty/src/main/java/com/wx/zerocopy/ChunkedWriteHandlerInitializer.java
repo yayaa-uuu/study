@@ -23,7 +23,7 @@ public class ChunkedWriteHandlerInitializer extends ChannelInitializer<Channel> 
         ChannelPipeline pipeline = ch.pipeline();
         //将 SslHandler 添加到ChannelPipeline 中
         pipeline.addLast(new SslHandler(sslCtx.newEngine(ch.alloc())));
-        //添加 ChunkedWriteHandler以处理作为ChunkedInput传入的数据
+        //添加 ChunkedWriteHandler以处理作为ChunkedInput传入的数据
         pipeline.addLast(new ChunkedWriteHandler());
         //一旦连接建立，WriteStreamHandler就开始写文件数据
         pipeline.addLast(new WriteStreamHandler());

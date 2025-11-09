@@ -1,32 +1,6 @@
-pluginManagement {
-    repositories {
-        maven { url "https://maven.aliyun.com/repository/gradle-plugin" }
-        maven { url 'https://repo.spring.io/milestone' }
-        maven { url 'https://repo.spring.io/snapshot' }
-        gradlePluginPortal()
-    }
-}
 rootProject.name = 'study'
-include 'platform'
-include 'algorithm'
-include 'junit_demo'
-include 'priority'
-include 'java8'
-include 'excel'
+include 'common'
+include 'demo'
 
 
-//include 'design-patterns'
-//include 'springboot-tx'
-//include 'springboot-webflux'
-//include 'springboot-web'
-//include 'springboot-translation'
-//include 'springboot-pdf-convert-word'
-//include 'springboot-netty'
-//include 'springboot-cache'
-//include 'springboot-amqp'
-//include 'json'
-//include 'juc'
-//include 'java8'
-//include 'jvm'
-//include 'spring'
-//include 'springcloud'
+

@@ -1,46 +1,45 @@
 plugins {
-    id 'io.spring.dependency-management' version '1.0.12.RELEASE'
-    id 'org.springframework.boot' version '3.0.0-SNAPSHOT'
+    id 'java'
+    id 'idea'
 }
 
-configure(subprojects.findAll { it.name != 'platform' }) {
-    apply plugin: 'java-library'
-    apply plugin: 'idea'
-    apply plugin: 'io.spring.dependency-management'
-    apply plugin: 'org.springframework.boot'
 
-    group 'cm.wx'
-    version '1.0.0'
-
-    java {
-        toolchain {
-            sourceCompatibility = JavaVersion.VERSION_17
-            targetCompatibility = JavaVersion.VERSION_17
-        }
-    }
+allprojects {
+    group = 'com.wxli'
+    version = '1.0.0'
 
     repositories {
-        maven { url 'https://repo.spring.io/milestone' }
-        maven { url 'https://repo.spring.io/snapshot' }
-        maven { url 'https://maven.aliyun.com/repository/public/' }
-        maven { url 'https://repository.aspose.com/repo/' }
-        maven { url 'https://repository.springsource.com/maven/bundles/external' }
+        mavenLocal()
         mavenCentral()
+        gradlePluginPortal()
     }
+}
 
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'idea'
 
-    configurations {
-        compileOnly {
-            extendsFrom annotationProcessor
-        }
-    }
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
 
     dependencies {
-        implementation platform(project(':platform'))
+        testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
+        testImplementation 'org.assertj:assertj-core:3.24.2'
     }
+
     test {
-        useJUnitPlatform{
-            includeTags ''
+        useJUnitPlatform()
+        testLogging {
+            events "passed", "skipped", "failed"
         }
     }
+}
+
+
+project(':common') {
+    
+}
+
+project(':demo') {
+
 }
