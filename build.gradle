@@ -43,3 +43,7 @@ project(':common') {
 project(':demo') {
 
 }
+
+project(':flink-app') {
+
+}

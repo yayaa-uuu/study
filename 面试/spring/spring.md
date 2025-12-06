@@ -63,10 +63,14 @@ B->A
 4. 使用事务注解的方法的类，未被spring管理
 
 #### springboot自动装配
-1. 引入Starter组件-本质上是一个jar包
-2. SpringBoot基于约定去Starter组件的路径下（META-INF/spring.factories）去找配置类
-3. SpringBoot使用ImportSelector去导入这些配置类，并根据@Conditional动态加载配置类里面的Bean到容器
+1. 启动时通过@EnableAutoConfiguration触发自动装配
+2. ImportSelector读取META-INF/spring.factories获取所有自动配置类
+3. 按条件注解（如@ConditionalOnClass）判断是否生效
+4. 生效的配置类向容器注册Bean
 
 #### spring mvc
 DispatcherServlet --> HandlerMapping --> HandlerAdapter --> Handler 
-
+1. 请求先到DispatcherServlet
+2. 通过url找HandlerMapping，会返回 目标controller 和 拦截器
+3. 再找到HandlerAdapter，通过这个dapter去执行拦截器和目标controller
+4. 视图解析器...(json)
