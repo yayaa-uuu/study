@@ -2,6 +2,7 @@ rootProject.name = 'study'
 include 'common'
 include 'demo'
 include 'flink-app'
+include 'canal'
 
 
 

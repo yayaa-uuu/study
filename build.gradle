@@ -1,18 +1,6 @@
-plugins {
-    id 'java'
-    id 'idea'
-}
-
-
 allprojects {
     group = 'com.wxli'
     version = '1.0.0'
-
-    repositories {
-        mavenLocal()
-        mavenCentral()
-        gradlePluginPortal()
-    }
 }
 
 subprojects {
@@ -23,10 +11,19 @@ subprojects {
     targetCompatibility = JavaVersion.VERSION_1_8
 
     dependencies {
+        implementation 'ch.qos.logback:logback-classic:1.2.13'
         testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
         testImplementation 'org.assertj:assertj-core:3.24.2'
     }
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        gradlePluginPortal()
+    }
 
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+    }
     test {
         useJUnitPlatform()
         testLogging {
@@ -35,15 +32,3 @@ subprojects {
     }
 }
 
-
-project(':common') {
-    
-}
-
-project(':demo') {
-
-}
-
-project(':flink-app') {
-
-}

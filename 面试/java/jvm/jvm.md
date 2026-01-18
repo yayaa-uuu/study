@@ -146,7 +146,7 @@ JNI 的方法
 • 使用 javap反解析Class文件。
 • 了解方法调用指令（invokevirtual, invokestatic等）。
 • 了解 i++和 ++i的字节码区别。
-实践：写一个简单的 synchronized方法，用 javap -c -v查看 monitorenter和 monitorexit指令。
+实践：写一个简单的 synchronized方法，用 javap -c -v查看 monitorenter和 monitorexit 指令。
 ### 类加载过程
 • 加载、链接（验证、准备、解析）、初始化。
 • 重点理解 <clinit>()和 <init>()方法。
