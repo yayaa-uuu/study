@@ -3,6 +3,7 @@ include 'common'
 include 'demo'
 include 'flink-app'
 include 'canal'
+include 'kafka'
 
 
 
